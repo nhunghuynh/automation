@@ -1,89 +1,93 @@
-import {test, expect} from '@playwright/test';
+import {test, expect, Locator} from '@playwright/test';
+import { log } from 'console';
 
 // TEST01: Practice using locators
 test('TC01: Filter product', async ({page}) => {
     //Open webpage
     await page.goto('https://commitquality.com/');
 
-    //Find 'Filter by product name' textbox by name then click
+    //1. find 'Filter by product name' textbox then click
+
+    //by name
     await page.getByRole('textbox', { name: 'Filter by product name' }).click();
+    
+    //by placeholder
+    await page.getByPlaceholder('Filter by product name').click();
 
-    //Find 'Filter by product name' textbox by class and fill data
-    await page.locator(".filter-textbox").fill('Product 1');
+    //by css
+    await page.locator('input[placeholder="Filter by product name"]').click();
 
-    //Find 'Filter' button by data-testid and click
+    await page.locator('input.filter-textbox').click();
+
+    //by xpath
+    await page.locator('//input[@placeholder="Filter by product name"]').click();
+
+    await page.locator('//input[contains(@class, "filter-textbox")]').click();
+
+    //2. Find 'Filter by product name' textbox by class and fill data
+    await page.getByRole('textbox', { name: 'Filter by product name' }).fill('Product 1');
+
+    //3. Find 'Filter' button and click
+
+    //by data-testid 
     await page.getByTestId('filter-button').click();
 
-    //Find 'Filter' button by text and click
+    //by class with multiple elements
+    await page.locator('button.filter-button').first().click();
+    
+    //by css
     await page.locator('text=Filter').click();
 
-    //Find Reset button by data-testid and click
+    //by xpath
+    await page.locator('//button[text()="Filter"]').click();
+
+    //4. Find Reset button by data-testid and click
     await page.getByTestId('reset-filter-button').click();
 
-    //Find 'Reset' button by text and click
-    await page.locator('text=Reset').click();
-
-    //find 'filter by product name' textbox by name and fill data
+    //5. find 'filter by product name' textbox by name and fill data
     await page.getByRole('textbox', { name: 'Filter by product name' }).click();
 
-    //Find 'filter by product name' textbox by placeholder and fill data
-    await page.locator('input[placeholder="filter by product name"]').fill('Product 2');
+    //6. Find 'filter by product name' textbox by placeholder and fill data
+    await page.locator('input[placeholder="Filter by product name"]').fill('Product 2');
 
-    //Find 'Filter' button by data-testid and click
+    //7. Find 'Filter' button by data-testid and click
     await page.getByTestId('filter-button').click();
 
-    //Find product name 'Product 2' by data-testid and click
+    //8. Find product name 'Product 2' and click
+    
+    //by data-testid
     await page.getByTestId('product-row-11').getByTestId('name').click();
-});
 
-//TEST02: Add a product - practice using locators
-test('TC02: Add a product', async ({page}) => {
-    //Open webpage
-    await page.goto('https://commitquality.com/');
+    //get number of product by css
+    const product: Locator = page.locator('tr[data-testid^="product-row-"]')
+    const numberOfProducts = await product.count();
+    console.log(`Number of products displayed: ${numberOfProducts}`);
 
-    //Find 'Add a product' button by data-testid and click
-    await page.getByTestId('add-a-product-button').click();
+    //by css - click the first product
+    await product.first().locator('td[data-testid^="name"]').click();
+    const productName = await product.first().locator('td[data-testid^="name"]').textContent();
+    console.log(`First product name: ${productName}`);
 
-    //Find 'Add a product' button by text and click
-    // await page.locator('text=Add a Product').click();
-    
-    //Find 'Product name' textbox by data-testid and click
-    await page.getByTestId('product-textbox').click();
+    //by xpath - click the last product
+    await page.locator('(//tr[starts-with(@data-testid, "product-row-")])[last()]//td[starts-with(@data-testid, "name")]').click();
+    const lastProductName = await page.locator('(//tr[starts-with(@data-testid, "product-row-")])[last()]//td[starts-with(@data-testid, "name")]').textContent();
+    console.log(`Last product name: ${lastProductName}`);
 
-    //Find 'Product name' textbox by placeholder and click
-    await page.getByPlaceholder('Enter a product name').click();
+    //by css - click 3rd product   
+    await product.nth(2).locator('td[data-testid^="name"]').click();
+    const thirdProductName = await product.nth(2).locator('td[data-testid^="name"]').textContent();
+    console.log(`Third product name: ${thirdProductName}`);
 
-    //Fill 'Product name' textbox
-    await page.getByTestId('product-textbox').fill('Product3');
+    //9. Find Reset button by data-testid and click
+    await page.getByTestId('reset-filter-button').click();
 
-    //Press tab to move to next field
-    await page.getByTestId('product-textbox').press('Tab');
+    //by xpath - click the 5th product
+    await product.nth(4).locator('td[data-testid^="name"]').click();
+    const fourthProductName = await product.nth(4).locator('td[data-testid^="name"]').textContent();
+    console.log(`Fourth product name: ${fourthProductName}`);
 
-    //Find 'Price' textbox by data-testid and fill data
-    await page.getByTestId('price-textbox').fill('1000');
-
-    //Press tab to move to next field
-    await page.getByTestId('price-textbox').press('Tab');
-
-    //Find 'Price' textbox by data-testid and fill data
-    await page.getByTestId('price-textbox').fill('1000');
-
-    //Find 'Date Stocked' textbox by data-testid and fill data
-    await page.getByTestId('date-stocked').fill('2025-11-13');
-
-    //Find 'Submit' button by data-testid and click
-    await page.getByTestId('submit-form').click();
-
-    //Find the newly added product by data-testid and click
-    await page.getByTestId('date-stocked').fill('2025-11-12');
-
-    //Find 'Add a product' button by data-testid and click
-    await page.getByText('ProductsAdd ProductPracticeLearnLoginAdd ProductNamePriceDate StockedDate must').click();
-    
-    //Find Submit button by data-testid and click
-    await page.getByTestId('submit-form').click();
-    
-    //Find the newly added product by data-testid and click
-    await page.getByTestId('product-row-12').getByTestId('dateStocked').click();
-
+    //by css - click 8th product
+    await product.nth(7).locator('td[data-testid^="name"]').click();
+    const seventhProductName = await product.nth(7).locator('td[data-testid^="name"]').textContent();
+    console.log(`Seventh product name: ${seventhProductName}`);
 });
