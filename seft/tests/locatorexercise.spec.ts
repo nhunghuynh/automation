@@ -91,3 +91,23 @@ test('TC01: Filter product', async ({page}) => {
     const seventhProductName = await product.nth(7).locator('td[data-testid^="name"]').textContent();
     console.log(`Seventh product name: ${seventhProductName}`);
 });
+
+// TEST02: Vefify user can create product successfuffly
+test('TC02: Create a product', async ({page}) => {
+    await page.goto("https://commitquality.com/");
+
+    //Click Add a Product buttton
+    await page.getByTestId('add-a-product-button').click();
+
+    //Enter product name
+    await page.getByTestId('product-textbox').fill("New Product 1");
+
+    //Enter price
+    await page.getByPlaceholder("Enter a price").fill("100");
+
+    //Enter date stocked
+    await page.getByTestId("date-stocked").fill("2025-11-23");
+
+    //Click Submit button
+    await page.locator(".btn.btn-primary").click();
+});
