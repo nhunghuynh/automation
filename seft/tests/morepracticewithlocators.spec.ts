@@ -8,7 +8,7 @@ test.describe('More practice with locators', () => {
     });
 
     //Test 01: More practice with locators - General components
-    test("TC03: More practice with locators-General components", async ({page}) => {
+    test("TC01: More practice with locators-General components", async ({page}) => {
         //Click General Component panel
         await page.getByTestId("practice-general").click();
         
@@ -47,5 +47,23 @@ test.describe('More practice with locators', () => {
 
         //Click the last link 'Go to practice' page
         await page.locator(".links-container a").last().click();
+    });
+
+    test("TC02: More practice with locators-iFrame", async ({page}) => {
+        //Click 'Iframes' panel
+        await page.getByTestId("practice-iframe").click();
+
+        //const allframes = page.frames();
+        const iframeCount = await page.locator('iframe').count();
+        console.log("Số iframe=", iframeCount);
+
+        //get the iframe
+        const frame = page.frameLocator('iframe[data-testid="iframe"]');
+
+        //Enter product name to search textbox
+        await frame.getByRole("textbox", {name: 'Filter by product name'}).fill("Product 2")
+
+        //Click Filter button
+        await frame.getByRole("button", {name: 'Filter'}).click();
     });
 });
