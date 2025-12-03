@@ -269,21 +269,30 @@ test.describe('Practice elemements on demoqa page', () => {
 
     //Test08: Upload and Download
     test('Test08: Upload and Download', async ({page, context}) => {
+        const context1 = await browser.newContext({
+        acceptDownloads: true
+        });
+        
         //Click Upload and Download item on the left navigation
         await page.locator('li:has(span:text-is("Upload and Download"))').click();
-        
-        //Download the file
-        const [download] = await Promise.all([
-            page.waitForEvent('download'),
-            page.getByRole('button', {name: 'Download'}).click()
-        ]);
 
-        //Save the downloaded file to a specific path
-        const downloadPath = './downloads/' + download.suggestedFilename();
-        await download.saveAs(downloadPath);
+        //Download the file
+        const [response] = await Promise.all([
+            page.waitForResponse(res => res.url().includes('/downloadFile') && res.status() === 200),
+            page.locator('#downloadButton').click()
+         ]);
+
+        const buffer = await response.body();
+        const fs = require('fs');
+        fs.writeFileSync('downloaded-file.jpeg', buffer);
+
+
+        // //Save the downloaded file to a specific path
+        // const downloadPath = './downloads/' + download.suggestedFilename();
+        // await download.saveAs(downloadPath);
 
         //Verify the file is downloaded
-        const fs = require('fs');
+        //const fs = require('fs');
         expect(fs.existsSync(downloadPath)).toBeTruthy();
         
         //Upload a file
