@@ -29,6 +29,51 @@ test.describe('Practice elemements on demoqa page', () => {
     });
 
     //Test02: Check Box
+    test('Test02: Check Box', async ({page}) => {
+        //Click Check Box item on the left navigation
+        await page.getByRole('listitem').filter({hasText: 'Check Box'}).click();
+
+        //Click Expand All button
+        await page.getByRole('button', {name: 'Expand all'}).click();
+
+        //Select Home checkbox
+        await page.locator('label').filter({hasText: 'Home'}).check();
+
+        //Verify that all checkboxes are selected
+        const checkboxes = page.locator('#tree-node-home');
+        const count = await checkboxes.count();
+        for (let i = 0; i < count; i++) {
+            await expect(checkboxes.nth(i)).toBeChecked();
+        }
+
+        //Deselect checkbox Home
+        await page.locator('label').filter({hasText: 'Home'}).uncheck();
+
+        //Verify that all checkboxes are deselected
+        for (let i = 0; i < count; i++) {
+            await expect(checkboxes.nth(i)).not.toBeChecked();
+        }
+
+        //Select Desktop and Documents checkboxes only
+        await page.locator('label').filter({hasText: 'Desktop'}).check();
+        await page.locator('label').filter({hasText: 'Documents'}).check();
+        
+        //Verify that Desktop and Documents checkboxes are selected
+        const desktopcheckboxes = page.locator('#tree-node-desktop');
+        const documentCheckboxes = page.locator('#tree-node-documents');
+        const desktopCount = await desktopcheckboxes.count();
+        const documentCount = await documentCheckboxes.count();
+        for (let i = 0; i < desktopCount; i++) {
+            await expect(desktopcheckboxes.nth(i)).toBeChecked();
+        }
+        for (let i = 0; i < documentCount; i++) {
+            await expect(documentCheckboxes.nth(i)).toBeChecked();
+        }
+
+        //Verify that other checkboxes are not selected
+        const downloadsCheckboxes = page.locator('#tree-node-downloads');
+        const downloadsCount = await downloadsCheckboxes.count();   
+    });
 
     //Test03: Radio Button
     test('Test03: Radio Button', async ({page}) => {
@@ -269,38 +314,59 @@ test.describe('Practice elemements on demoqa page', () => {
 
     //Test08: Upload and Download
     test('Test08: Upload and Download', async ({page, context}) => {
-        const context1 = await browser.newContext({
-        acceptDownloads: true
-        });
         
         //Click Upload and Download item on the left navigation
         await page.locator('li:has(span:text-is("Upload and Download"))').click();
 
-        //Download the file
-        const [response] = await Promise.all([
-            page.waitForResponse(res => res.url().includes('/downloadFile') && res.status() === 200),
-            page.locator('#downloadButton').click()
-         ]);
+        // Start waiting for download before clicking. Note no await
+        const downloadPromise = page.waitForEvent('download');
+        await page.locator('#downloadButton').click();
+        const download = await downloadPromise;
 
-        const buffer = await response.body();
-        const fs = require('fs');
-        fs.writeFileSync('downloaded-file.jpeg', buffer);
+        //Get the original download file path
+        const originalFilePath = await download.path();
 
+        //Set new download path
+        const newFilePath = 'seft/tests/resources/' + download.suggestedFilename();
 
-        // //Save the downloaded file to a specific path
-        // const downloadPath = './downloads/' + download.suggestedFilename();
-        // await download.saveAs(downloadPath);
+        //Save the downloaded file to the new path
+        await download.saveAs(newFilePath);
 
-        //Verify the file is downloaded
-        //const fs = require('fs');
-        expect(fs.existsSync(downloadPath)).toBeTruthy();
-        
+        //Print the new download file path
+        console.log('File downloaded at: ' + newFilePath);
+
         //Upload a file
-        const filePathToUpload = './seft/tests/testdata/samplefile.txt';
-        await page.getByLabel('Upload File').setInputFiles(filePathToUpload);
+        const fileToUpload = 'seft/tests/resources/sampleFile.jpeg';
+        await page.locator('#uploadFile').setInputFiles(fileToUpload);
+        
+        //Verify the file is uploaded successfully
+        const uploadedFilePath = await page.locator('#uploadedFilePath').textContent();
+        expect(uploadedFilePath).toContain('sampleFile.jpeg');
+    });
 
-        //Verify the file is uploaded
-        const uploadedFilePath = page.getById('uploadedFilePath');
-        await expect(uploadedFilePath).toContainText('samplefile.txt');
+    //Test09: Dynammic Properties
+    test('Test09: Dynamic Properties', async ({page}) => {
+        //Click Dynamic Properties item on the left navigation
+        await page.locator('li').filter({hasText: 'Dynamic Properties'}).click();
+
+        //Verify original state: button is disabled, color of the button, button is hidden
+        const enableafterButton = page.locator('#enableAfter');
+        await expect(enableafterButton).toBeDisabled();
+
+        const visibleAfterButton = page.locator('#visibleAfter');
+        await expect(visibleAfterButton).toBeHidden();
+
+        //Wait for 5 seconds and then verify the changes
+        await page.waitForTimeout(6000); //Wait for 6 seconds to be sure
+
+        //Verify button is enabled after 5 seconds
+        await expect(enableafterButton).toBeEnabled();
+
+        //Verify color of the button changes after 5 seconds});
+        const colorChangeButton = page.locator('#colorChange');
+        await expect(colorChangeButton).toHaveClass(/text-danger/);
+    
+        //Verify that the button appears after 5 seconds
+        await expect(visibleAfterButton).toBeVisible();
     });
 });
