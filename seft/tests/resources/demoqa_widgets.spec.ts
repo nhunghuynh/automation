@@ -88,4 +88,62 @@ test.describe('Practice elemements on demoqa page - Widgets', () => {
             expect (selectedText === 'Red' || selectedText === 'Green').toBeTruthy();
         }
     });
+
+    //Test03: Date Picker
+    test('Test03: Date Picker', async ({page}) => {
+        //Click Date Picker button on the left menu
+        await page.getByRole('listitem').filter({hasText: 'Date Picker'}).click();
+        
+        //Open the date picker
+        const dateInput = page.locator('#datePickerMonthYearInput');
+        await dateInput.click();
+
+        //Select month June
+        const monthSelect = page.locator('.react-datepicker__month-select')
+        await monthSelect.selectOption('5'); // Select June (0-based index)
+
+        //Select year 1983
+        const yearSelect = page.locator('.react-datepicker__year-select');
+        await yearSelect.selectOption('1983');
+
+        //Select date 28
+        const dateToSelect = page.locator('.react-datepicker__day--028');
+        await dateToSelect.click();
+
+        //Verify selected date
+        const selectedDate = await dateInput.inputValue();
+        expect (selectedDate).toBe('06/28/1983');
+
+        //Open the date and time picker
+        const dateAndTimeInput = page.locator('#dateAndTimePickerInput');
+        await dateAndTimeInput.click();
+
+        //Select month Jan
+        const monthSelect2 = page.locator('.react-datepicker__month-option');
+        await monthSelect2.selectOption('January');
+
+        //Select year 2001
+        const yearSelect2 = page.locator('.react-datepicker__year-read-view--selected-year');
+        await yearSelect2.selectOption('2001');
+
+        //Select date 17
+        const dateToSelect2 = page.locator('.react-datepicker__day--017');
+        await dateToSelect2.click();
+        
+        //Select time 10:15 AM
+        const timeList = page.locator('.react-datepicker__time-list .react-datepicker__time-list-item');
+        const timeCount = await timeList.count();
+        for (let k=0; k<timeCount; k++) {
+            const timeOption = timeList.nth(k);
+            const timeText = await timeOption.textContent();
+            if (timeText === '10:15') {
+                await timeOption.click();
+                break;
+            }
+        }
+        
+        //Verify selected date and time
+        const selectedDateTime = await dateAndTimeInput.inputValue();
+        expect (selectedDateTime).toBe('01/17/2001 10:15 AM');
+    });
 });
