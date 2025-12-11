@@ -1,0 +1,259 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - img "adplus-dvertising" [ref=e6] [cursor=pointer]
+    - iframe [ref=e9]:
+      
+  - generic [ref=e10]:
+    - banner [ref=e11]:
+      - link [ref=e12] [cursor=pointer]:
+        - /url: https://demoqa.com
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - generic [ref=e19]:
+        - generic [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]:
+            - img [ref=e25]
+            - text: Elements
+          - img [ref=e30]
+        - generic [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]:
+            - img [ref=e39]
+            - text: Forms
+          - img [ref=e45]
+        - generic [ref=e51] [cursor=pointer]:
+          - generic [ref=e52]:
+            - img [ref=e54]
+            - text: Alerts, Frame & Windows
+          - img [ref=e59]
+        - generic [ref=e63]:
+          - generic [ref=e65] [cursor=pointer]:
+            - generic [ref=e66]:
+              - img [ref=e68]
+              - text: Widgets
+            - img [ref=e73]
+          - list [ref=e78]:
+            - listitem [ref=e79] [cursor=pointer]:
+              - img [ref=e80]
+              - generic [ref=e82]: Accordian
+            - listitem [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+              - generic [ref=e86]: Auto Complete
+            - listitem [ref=e87] [cursor=pointer]:
+              - img [ref=e88]
+              - generic [ref=e90]: Date Picker
+            - listitem [ref=e91] [cursor=pointer]:
+              - img [ref=e92]
+              - generic [ref=e94]: Slider
+            - listitem [ref=e95] [cursor=pointer]:
+              - img [ref=e96]
+              - generic [ref=e98]: Progress Bar
+            - listitem [ref=e99] [cursor=pointer]:
+              - img [ref=e100]
+              - generic [ref=e102]: Tabs
+            - listitem [ref=e103] [cursor=pointer]:
+              - img [ref=e104]
+              - generic [ref=e106]: Tool Tips
+            - listitem [ref=e107] [cursor=pointer]:
+              - img [ref=e108]
+              - generic [ref=e110]: Menu
+            - listitem [ref=e111] [cursor=pointer]:
+              - img [ref=e112]
+              - generic [ref=e114]: Select Menu
+        - generic [ref=e117] [cursor=pointer]:
+          - generic [ref=e118]:
+            - img [ref=e120]
+            - text: Interactions
+          - img [ref=e125]
+        - generic [ref=e131] [cursor=pointer]:
+          - generic [ref=e132]:
+            - img [ref=e134]
+            - text: Book Store Application
+          - img [ref=e139]
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - heading "Date Picker" [level=1] [ref=e145]
+          - generic [ref=e146]:
+            - generic [ref=e147]: Select Date
+            - textbox [ref=e151]: 06/28/1983
+          - generic [ref=e152]:
+            - generic [ref=e153]: Date And Time
+            - generic [ref=e154]:
+              - textbox [ref=e157]: December 11, 2025 9:19 PM
+              - generic [ref=e160]:
+                - button "Previous Month" [ref=e162] [cursor=pointer]
+                - button "Next Month" [ref=e163] [cursor=pointer]
+                - generic [ref=e164]:
+                  - generic [ref=e165]:
+                    - generic [ref=e166]: January 2025
+                    - generic [ref=e167]:
+                      - generic [ref=e169] [cursor=pointer]: January
+                      - generic [ref=e172]: "2025"
+                    - generic [ref=e174]:
+                      - generic [ref=e175]: Su
+                      - generic [ref=e176]: Mo
+                      - generic [ref=e177]: Tu
+                      - generic [ref=e178]: We
+                      - generic [ref=e179]: Th
+                      - generic [ref=e180]: Fr
+                      - generic [ref=e181]: Sa
+                  - listbox "month 2025-01" [ref=e182]:
+                    - generic [ref=e183]:
+                      - option "Choose Sunday, December 29th, 2024" [ref=e184] [cursor=pointer]: "29"
+                      - option "Choose Monday, December 30th, 2024" [ref=e185] [cursor=pointer]: "30"
+                      - option "Choose Tuesday, December 31st, 2024" [ref=e186] [cursor=pointer]: "31"
+                      - option "Choose Wednesday, January 1st, 2025" [ref=e187] [cursor=pointer]: "1"
+                      - option "Choose Thursday, January 2nd, 2025" [ref=e188] [cursor=pointer]: "2"
+                      - option "Choose Friday, January 3rd, 2025" [ref=e189] [cursor=pointer]: "3"
+                      - option "Choose Saturday, January 4th, 2025" [ref=e190] [cursor=pointer]: "4"
+                    - generic [ref=e191]:
+                      - option "Choose Sunday, January 5th, 2025" [ref=e192] [cursor=pointer]: "5"
+                      - option "Choose Monday, January 6th, 2025" [ref=e193] [cursor=pointer]: "6"
+                      - option "Choose Tuesday, January 7th, 2025" [ref=e194] [cursor=pointer]: "7"
+                      - option "Choose Wednesday, January 8th, 2025" [ref=e195] [cursor=pointer]: "8"
+                      - option "Choose Thursday, January 9th, 2025" [ref=e196] [cursor=pointer]: "9"
+                      - option "Choose Friday, January 10th, 2025" [ref=e197] [cursor=pointer]: "10"
+                      - option "Choose Saturday, January 11th, 2025" [ref=e198] [cursor=pointer]: "11"
+                    - generic [ref=e199]:
+                      - option "Choose Sunday, January 12th, 2025" [ref=e200] [cursor=pointer]: "12"
+                      - option "Choose Monday, January 13th, 2025" [ref=e201] [cursor=pointer]: "13"
+                      - option "Choose Tuesday, January 14th, 2025" [ref=e202] [cursor=pointer]: "14"
+                      - option "Choose Wednesday, January 15th, 2025" [ref=e203] [cursor=pointer]: "15"
+                      - option "Choose Thursday, January 16th, 2025" [ref=e204] [cursor=pointer]: "16"
+                      - option "Choose Friday, January 17th, 2025" [ref=e205] [cursor=pointer]: "17"
+                      - option "Choose Saturday, January 18th, 2025" [ref=e206] [cursor=pointer]: "18"
+                    - generic [ref=e207]:
+                      - option "Choose Sunday, January 19th, 2025" [ref=e208] [cursor=pointer]: "19"
+                      - option "Choose Monday, January 20th, 2025" [ref=e209] [cursor=pointer]: "20"
+                      - option "Choose Tuesday, January 21st, 2025" [ref=e210] [cursor=pointer]: "21"
+                      - option "Choose Wednesday, January 22nd, 2025" [ref=e211] [cursor=pointer]: "22"
+                      - option "Choose Thursday, January 23rd, 2025" [ref=e212] [cursor=pointer]: "23"
+                      - option "Choose Friday, January 24th, 2025" [ref=e213] [cursor=pointer]: "24"
+                      - option "Choose Saturday, January 25th, 2025" [ref=e214] [cursor=pointer]: "25"
+                    - generic [ref=e215]:
+                      - option "Choose Sunday, January 26th, 2025" [ref=e216] [cursor=pointer]: "26"
+                      - option "Choose Monday, January 27th, 2025" [ref=e217] [cursor=pointer]: "27"
+                      - option "Choose Tuesday, January 28th, 2025" [ref=e218] [cursor=pointer]: "28"
+                      - option "Choose Wednesday, January 29th, 2025" [ref=e219] [cursor=pointer]: "29"
+                      - option "Choose Thursday, January 30th, 2025" [ref=e220] [cursor=pointer]: "30"
+                      - option "Choose Friday, January 31st, 2025" [ref=e221] [cursor=pointer]: "31"
+                      - option "Choose Saturday, February 1st, 2025" [ref=e222] [cursor=pointer]: "1"
+                - generic [ref=e223]:
+                  - generic [ref=e225]: time
+                  - list [ref=e228]:
+                    - listitem [ref=e229]: 00:00
+                    - listitem [ref=e230]: 00:15
+                    - listitem [ref=e231]: 00:30
+                    - listitem [ref=e232]: 00:45
+                    - listitem [ref=e233]: 01:00
+                    - listitem [ref=e234]: 01:15
+                    - listitem [ref=e235]: 01:30
+                    - listitem [ref=e236]: 01:45
+                    - listitem [ref=e237]: 02:00
+                    - listitem [ref=e238]: 02:15
+                    - listitem [ref=e239]: 02:30
+                    - listitem [ref=e240]: 02:45
+                    - listitem [ref=e241]: 03:00
+                    - listitem [ref=e242]: 03:15
+                    - listitem [ref=e243]: 03:30
+                    - listitem [ref=e244]: 03:45
+                    - listitem [ref=e245]: 04:00
+                    - listitem [ref=e246]: 04:15
+                    - listitem [ref=e247]: 04:30
+                    - listitem [ref=e248]: 04:45
+                    - listitem [ref=e249]: 05:00
+                    - listitem [ref=e250]: 05:15
+                    - listitem [ref=e251]: 05:30
+                    - listitem [ref=e252]: 05:45
+                    - listitem [ref=e253]: 06:00
+                    - listitem [ref=e254]: 06:15
+                    - listitem [ref=e255]: 06:30
+                    - listitem [ref=e256]: 06:45
+                    - listitem [ref=e257]: 07:00
+                    - listitem [ref=e258]: 07:15
+                    - listitem [ref=e259]: 07:30
+                    - listitem [ref=e260]: 07:45
+                    - listitem [ref=e261]: 08:00
+                    - listitem [ref=e262]: 08:15
+                    - listitem [ref=e263]: 08:30
+                    - listitem [ref=e264]: 08:45
+                    - listitem [ref=e265]: 09:00
+                    - listitem [ref=e266]: 09:15
+                    - listitem [ref=e267]: 09:30
+                    - listitem [ref=e268]: 09:45
+                    - listitem [ref=e269]: 10:00
+                    - listitem [ref=e270]: 10:15
+                    - listitem [ref=e271]: 10:30
+                    - listitem [ref=e272]: 10:45
+                    - listitem [ref=e273]: 11:00
+                    - listitem [ref=e274]: 11:15
+                    - listitem [ref=e275]: 11:30
+                    - listitem [ref=e276]: 11:45
+                    - listitem [ref=e277]: 12:00
+                    - listitem [ref=e278]: 12:15
+                    - listitem [ref=e279]: 12:30
+                    - listitem [ref=e280]: 12:45
+                    - listitem [ref=e281]: 13:00
+                    - listitem [ref=e282]: 13:15
+                    - listitem [ref=e283]: 13:30
+                    - listitem [ref=e284]: 13:45
+                    - listitem [ref=e285]: 14:00
+                    - listitem [ref=e286]: 14:15
+                    - listitem [ref=e287]: 14:30
+                    - listitem [ref=e288]: 14:45
+                    - listitem [ref=e289]: 15:00
+                    - listitem [ref=e290]: 15:15
+                    - listitem [ref=e291]: 15:30
+                    - listitem [ref=e292]: 15:45
+                    - listitem [ref=e293]: 16:00
+                    - listitem [ref=e294]: 16:15
+                    - listitem [ref=e295]: 16:30
+                    - listitem [ref=e296]: 16:45
+                    - listitem [ref=e297]: 17:00
+                    - listitem [ref=e298]: 17:15
+                    - listitem [ref=e299]: 17:30
+                    - listitem [ref=e300]: 17:45
+                    - listitem [ref=e301]: 18:00
+                    - listitem [ref=e302]: 18:15
+                    - listitem [ref=e303]: 18:30
+                    - listitem [ref=e304]: 18:45
+                    - listitem [ref=e305]: 19:00
+                    - listitem [ref=e306]: 19:15
+                    - listitem [ref=e307]: 19:30
+                    - listitem [ref=e308]: 19:45
+                    - listitem [ref=e309]: 20:00
+                    - listitem [ref=e310]: 20:15
+                    - listitem [ref=e311]: 20:30
+                    - listitem [ref=e312]: 20:45
+                    - listitem [ref=e313]: 21:00
+                    - listitem [ref=e314]: 21:15
+                    - listitem [ref=e315]: 21:30
+                    - listitem [ref=e316]: 21:45
+                    - listitem [ref=e317]: 22:00
+                    - listitem [ref=e318]: 22:15
+                    - listitem [ref=e319]: 22:30
+                    - listitem [ref=e320]: 22:45
+                    - listitem [ref=e321]: 23:00
+                    - listitem [ref=e322]: 23:15
+                    - listitem [ref=e323]: 23:30
+                    - listitem [ref=e324]: 23:45
+        - iframe [ref=e328]:
+          
+      - generic [ref=e333]:
+        - img "Build PlayWright tests with AI" [ref=e335] [cursor=pointer]
+        - iframe [ref=e338]:
+          - iframe [ref=f18e4]:
+            - generic [ref=f21e3]:
+              - generic [ref=f21e4]:
+                - link:
+                  - /url: https://app.adroll.com/optout/privacysandbox
+                  - img [ref=f21e6] [cursor=pointer]
+              - link [ref=f21e8] [cursor=pointer]:
+                - /url: https://apse1-x.d.adroll.com/reporting/click/5e594713ebe20b781244593e4b105843/eyJyZWRpcmVjdF91cmwiOiJodHRwczovL3d3dy5pY21hcmtldHMtdm5rLmNvbS92bi90cmFkaW5ndmlldy8_Y2FtcD04NDczNSZ1dG1fc291cmNlPWFkcm9sbCZ1dG1fbWVkaXVtPWRpc3BsYXkmdXRtX2NhbXBhaWduPWFkcl92aV92bl9wcl9sYWwmdXRtX3Rlcm09bGFsJnV0bV9jb250ZW50PXRyYWRpbmctdmlldyZwbGFjZW1lbnQ9JmFkcmNsaWQ9JmFkY3Q9NWU1OTQ3MTNlYmUyMGI3ODEyNDQ1OTNlNGIxMDU4NDMifQ?winning_price=0.131976&network=b
+        - iframe [ref=e341]:
+          
+    - contentinfo [ref=e342]:
+      - generic [ref=e343]: © 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED.
+```

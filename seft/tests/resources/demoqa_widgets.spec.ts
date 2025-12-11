@@ -118,13 +118,21 @@ test.describe('Practice elemements on demoqa page - Widgets', () => {
         const dateAndTimeInput = page.locator('#dateAndTimePickerInput');
         await dateAndTimeInput.click();
 
+        //Open month dropdown
+        const monthDropdown = page.locator('.react-datepicker__month-read-view--down-arrow');
+        await monthDropdown.click();
+
         //Select month Jan
-        const monthSelect2 = page.locator('.react-datepicker__month-option');
-        await monthSelect2.selectOption('January');
+        const monthSelect2 = page.locator('.react-datepicker__month-option').filter({hasText: 'January'})   ;
+        await monthSelect2.click();
+
+        //Open year dropdown
+        const yearDropdown = page.locator('.react-datepicker__year-read-view--down-arrow');
+        await yearDropdown.click();
 
         //Select year 2001
-        const yearSelect2 = page.locator('.react-datepicker__year-read-view--selected-year');
-        await yearSelect2.selectOption('2001');
+        const yearSelect2 = page.locator('.react-datepicker__year-option').filter({hasText: '2024'});
+        await yearSelect2.click();
 
         //Select date 17
         const dateToSelect2 = page.locator('.react-datepicker__day--017');
@@ -144,6 +152,103 @@ test.describe('Practice elemements on demoqa page - Widgets', () => {
         
         //Verify selected date and time
         const selectedDateTime = await dateAndTimeInput.inputValue();
-        expect (selectedDateTime).toBe('01/17/2001 10:15 AM');
+        expect (selectedDateTime).toBe('January 17, 2024 10:15 AM');
     });
+
+    //Test04: Slider
+    test('Test04: Slider', async ({page}) => {
+        //Click Slider button on the left menu
+        await page.getByRole('listitem').filter({hasText: 'Slider'}).click();
+        
+        //Locate the slider handle
+        const slider = page.locator('input[type="range"]');
+
+        //Move the slider to 70
+        await slider.evaluate((el, value) => {
+            const input = el as HTMLInputElement;
+            input.value = String(value); 
+            el.dispatchEvent(new Event('input'));
+            el.dispatchEvent(new Event('change'));
+        }, 70);
+
+        //Verify the slider value is 70
+        const sliderValue = await slider.inputValue();
+        expect (sliderValue).toBe('70');
+
+        // Veriry value in slider box
+        const sliderBoxValue = await page.locator('#sliderValue').inputValue();
+        expect (sliderBoxValue).toBe('70');
+    });
+
+    //Test05: Progress Bar
+    test('Test05: Progress Bar', async ({page}) => {
+        //Click Progress Bar button on the left menu
+        await page.getByRole('listitem').filter({hasText: 'Progress Bar'}).click();
+
+        const startButton = page.getByRole('button', { name: 'Start' });
+        const stopButton = page.getByRole('button', { name: 'Stop' });
+        const progressBar = page.getByRole('progressbar');
+
+        //Click Start button to start the progress bar
+        await startButton.click();
+
+        //Wait until progress bar reaches 70%
+        let value = 0;
+        while (value < 70) {
+            await page.waitForTimeout(50); //wait for 50 milliseconds
+            const currentValue = await progressBar.getAttribute('aria-valuenow');
+            value = Number(currentValue);
+        }
+    
+        //Click Stop button to stop the progress bar
+        await stopButton.click();
+
+        //Verify progress bar value is 70%
+        const finalValue = await progressBar.getAttribute('aria-valuenow');
+        expect (finalValue).toBe('70');
+
+        //Click Start button again
+        await startButton.click();
+
+        //Wait until progress bar reaches 100%
+        await expect(progressBar).toHaveAttribute('aria-valuenow', '100', {timeout: 15000});
+
+        //Verify progress bar value is 100%
+        const finalProgressValue = await progressBar.getAttribute('aria-valuenow');
+        expect (finalProgressValue).toBe('100');
+    });
+
+    //Test 06: Tabs
+    test('Test06: Tabs', async ({page}) => {
+        //Click Tabs button on the left menu
+        await page.getByRole('listitem').filter({hasText: 'Tabs'}).click();
+        
+        //Click on 'What' tab
+        const whatTab = page.getByRole('tab', {name: 'What'});
+        await whatTab.click();
+
+        //Verify 'What' tab content
+        const whatContent = page.locator('#tabpanel-1 p').first();
+        await expect(whatContent).toContainText('Lorem Ipsum is simply dummy text of the printing and typesetting industry.');
+        
+        //Click on 'Origin' tab
+        const originTab = page.getByRole('tab', {name: 'Origin'});
+        await originTab.click();
+
+        //Verify 'Origin' tab content
+        const originContent = page.locator('#tabpanel-2 p').first();
+        await expect(originContent).toContainText('Contrary to popular belief, Lorem Ipsum is not simply random text.');
+
+        //Click on 'Use' tab
+        const useTab = page.getByRole('tab', {name: 'Use'});
+        await useTab.click();
+
+        //Verify 'Use' tab content
+        const useContent = page.locator('#tabpanel-3 p').first();
+        await expect(useContent).toContainText('It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.');
+        
+        //Verify 'More' tab is disabled
+        const moreTab = page.getByRole('tab', {name: 'More'});
+        await expect(moreTab).toBeDisabled();
+    })
 });

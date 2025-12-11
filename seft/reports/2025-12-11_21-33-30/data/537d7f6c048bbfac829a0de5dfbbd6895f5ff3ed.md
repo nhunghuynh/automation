@@ -1,0 +1,318 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - img "adplus-dvertising" [ref=e6] [cursor=pointer]
+    - iframe [ref=e9]:
+      - generic [ref=f4e2]:
+        - link "Advertisement" [ref=f4e4] [cursor=pointer]:
+          - /url: https://ad.doubleclick.net/pcs/click?xai=AKAOjsvCaTNFhTbhp4o89uiqceDVjUkCCUPy-Jc_TESurAHDysMIYMSg2PkNuyQv6CVEsubFjmjoLDuxwLy7RiiPOGqigL1RYlJTN2YE0DaT1lsNOOhImVsfEfNUspAeCsw3uzAd6e7bW-lfj7zKTsjMs3peVaGq8jKpRqhHfSrM8bpJEtK0cR1ZvLsjxTcxTAELS9uncgbxKNwtHVcfg9m1pnDmKg23XRtQnig9j5P0VK8aqGvLcpPEuFivGPm1jVG1pf4WpoX0qM5E71nzDKqKT3Gw1MdH40xJNze0pJUVJVi6XhaBRYJuoSMi8bepLnKDZ-wakSc4G0G0_dFL1jB4l9TluFkcxOs0MHSd-NigHpfGyPr3pqpbpKAZQCBDlor0Npd8zPQybENKiakuhsQeYQqDVUHgwEkqCsJs9pBcK2jIuzFtEzGKbbc2N86U0V4lAF-TOMdx6jZSzYCUVyqkQcr0IpaN-tZLhFrCNBuoDaXE-AGapPmGv_tp_n5rskTFCdA1LegT6Jv0IZPzjDcNqbo_g5HcooA9NraSUUJL1rnAMrCxyDe_YqPPI8R88ilBpnKgBLs2Vo6bjjSOgyGOXMHEv1_UPA_04iYaAgdst-YqRQ2J47YVw-0blcz5bf1O04V_JfSf5tuZhNf0PbHgGvjnk64G8F1S6h9kQzdR3GU4T-e90s7cF3niSsmu7Yoc9KgI5O7qt6mk0Ksq5AOexLGeyO28e-onje_jjEAuCqMXEC9tWg50hqExCVvn_7YUHIKbIFhRjRoy38p9CbUXnDl09Jpmco3x_oK-Q2HIY58rjDzY6LYfokeTzPUyttDkfEi-lk0-uPC9ZhX0daXeAfgZUN3Sa0tgvaiiaEugBzwBWFXFwo-eSlnkMSS4tluTqKR6Fwm2AlfyWIYyv3W9sKvaW_7kIVPsuPpiejcLPVf2utiDUXAC63J4D1t8WInw5w6bDFa3CkZOwYDAu8Vsu-pHKL2Vvr_SbDvnQBYpyb8YNLoniWZJwoV_BePXE4len_Py04tdMSoZ3pM_pJ9atPCXtKvyCAMSxtizx-BqMm6dFWLbWTKD5Zj7f2INm0vPdIo-kH9b-fc-yY_brSkmLPddsCFjz3B5uFMwmDJnJXAIpD_jixXV-fu_Kq7cB0OlMdrdd3XCRi_lnqOEP6pheib03CZiuzuW-IiXK04xsf2r063zisiZylOp82uCya8LGaU1I4ywZVwyPvQIsf0KdPl9y2vkIoG3MqwD_s_yAcwprP6ZCcm58RG3DcsGgglcRO0JVyI1QN3njf5pTp7g-CACeUAzUQ3orRm5LcwGotE_WFEQbU_1ylfb32EHYRfw1FZ7OK3lPPVop53VNxRY2Tn_zlmgWGMiubWoD3ukzOU22iRxBWPa1osn02w3wNKbMO0l0skkHKHiD_73diJZTsJV5Up7g6byH1DPNoK7Zpgrsz-CZqWXN39eoc39LL7eGGAqgLEpBqLtZhi-joDzmL8jpZVeW6t3I9ekxTa_ekK4PlumkD3nDT-QPLwDakHqESpeoPDtU6StPAB5yVT8rfLDCLSJoCtnfk9DMj6oDgjlQ6M1mfqGrhfpncbs0hwnCJsZd7A4iPdf_sCi_6J_dkaCs2qQ5IDc9l840xDnl65gGRNBsZTPrepjXu-LweXLWp1BTtT4I8VFE7CnyohA4eJ3-tSzmlPWOs490xQiSwgMJrp7mHNqkNq7aqKO0gHqnZcHo51j1nrYxt8ApUMN4fc5RxvM&sai=AMfl-YSrIQ5QzYrfFokkgU2LUWqeZo_yPqi1Bx_jO5FihbfkAAOiRjLpuoX0QQcGmD0EVjPjVnY6oS7MgyGHb_4qqK6uWI2PksSzPm-FJa8hE2sgQEkxI9dmCoSnxsGrTtkrMKEks1o-9GXbXPNRM_8wIQyjj_CaXu7ShPDSRuA9m3HdLgR0vhDCvd1E7zP_JCvCQe9MIXGvu8rJxIo_yVRUDes_0MZyStn1R609vhe19lCZ2o37Lm9k0c91LyMtu88r8WguUa7m9OkKEmHw19ZQw-2Siccv3ELJE78CYkUIFWmVDDd_FdGGCdo64Je0_PDzVmYfvlc3qIiZp9bXzmFP7INiihp_oFcQjgEqMtfaxYYgqzcgqId_8pGFTn3uzZaEzGuIxp9PGsho0rsVQw5v4trrLhU6baUkRVlVjBnz9LtEhx9XPM6OL2Zm_9_H36gXbRLEWdRNDz1YgbIoBHVjuYtn9QVz7IfWhjwqYm7cHjTUvFQQQrsYO43x5vSbnN8r2-xezZqCBHKLgGBaTACru9VHWMWEhfgY2q0ljRsI_QeCked5ZdrfX1kv2OkW6UApdakcA84t8sh0KnrLGWRchpUgnHUu81hOU8_9FgANtX2TTRtc9pw5zIMF8aFjC_GkzQZ20H_eQIodULSm1ZajImy2eQ&sig=Cg0ArKJSzE2lzW2VB0DQ&fbs_aeid=%5Bgw_fbsaeid%5D&crd=aHR0cHM6Ly9hbWF6b24uY29t&urlfix=1&adurl=https://aws.amazon.com/free/database/%3Ftrk%3D6f8c5691-3413-4985-9927-9fa9c5850882%26sc_channel%3Ddisplay%2Bads%26dclid%3D%25edclid!%26gad_source%3D7
+          - img "Advertisement" [ref=f4e5]
+        - generic [ref=f4e6]:
+          - generic:
+            - img [ref=f4e10] [cursor=pointer]
+            - button [ref=f4e12] [cursor=pointer]:
+              - img [ref=f4e13]
+  - generic [ref=e10]:
+    - banner [ref=e11]:
+      - link [ref=e12] [cursor=pointer]:
+        - /url: https://demoqa.com
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - generic [ref=e19]:
+        - generic [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]:
+            - img [ref=e25]
+            - text: Elements
+          - img [ref=e30]
+        - generic [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]:
+            - img [ref=e39]
+            - text: Forms
+          - img [ref=e45]
+        - generic [ref=e51] [cursor=pointer]:
+          - generic [ref=e52]:
+            - img [ref=e54]
+            - text: Alerts, Frame & Windows
+          - img [ref=e59]
+        - generic [ref=e63]:
+          - generic [ref=e65] [cursor=pointer]:
+            - generic [ref=e66]:
+              - img [ref=e68]
+              - text: Widgets
+            - img [ref=e73]
+          - list [ref=e78]:
+            - listitem [ref=e79] [cursor=pointer]:
+              - img [ref=e80]
+              - generic [ref=e82]: Accordian
+            - listitem [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+              - generic [ref=e86]: Auto Complete
+            - listitem [ref=e87] [cursor=pointer]:
+              - img [ref=e88]
+              - generic [ref=e90]: Date Picker
+            - listitem [ref=e91] [cursor=pointer]:
+              - img [ref=e92]
+              - generic [ref=e94]: Slider
+            - listitem [ref=e95] [cursor=pointer]:
+              - img [ref=e96]
+              - generic [ref=e98]: Progress Bar
+            - listitem [ref=e99] [cursor=pointer]:
+              - img [ref=e100]
+              - generic [ref=e102]: Tabs
+            - listitem [ref=e103] [cursor=pointer]:
+              - img [ref=e104]
+              - generic [ref=e106]: Tool Tips
+            - listitem [ref=e107] [cursor=pointer]:
+              - img [ref=e108]
+              - generic [ref=e110]: Menu
+            - listitem [ref=e111] [cursor=pointer]:
+              - img [ref=e112]
+              - generic [ref=e114]: Select Menu
+        - generic [ref=e117] [cursor=pointer]:
+          - generic [ref=e118]:
+            - img [ref=e120]
+            - text: Interactions
+          - img [ref=e125]
+        - generic [ref=e131] [cursor=pointer]:
+          - generic [ref=e132]:
+            - img [ref=e134]
+            - text: Book Store Application
+          - img [ref=e139]
+      - generic [ref=e143]:
+        - iframe [ref=e146]:
+          - generic [active] [ref=f13e1]:
+            - generic [ref=f13e3]:
+              - generic [ref=f13e4]:
+                - link [ref=f13e5] [cursor=pointer]:
+                  - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CbuhJS9Y6aYCJHJXY29gP3JjU-QiKzP73gwGZz4bAgRWm4sLTgyoQASDG-9Z5YMEFoAGEjJm8AsgBCeACAKgDAcgDCqoEhAJP0CE-G15gJuUdo0Fdj7NMHMgaGawWCTzyVsOUKJkfZwdZU31SPgppAghLY5cfNMovuE7DYNmooIRJdk8jEbL1pMYHg9ATNgK0NNn0u7liWNsGU6aJRUf7U_Bdiv71BaI6uysdpIcQ6_pH8nIKuEk96u9o6_zBjpeUKO-TTqnod-yjbmD_lv9mIYuRZiYh90VZkGVInNo95wqbPNxiOUCfOO74n6cXCGNs2__PJUaUf8NXxRVbp16uIMEj_9xg26NCcD_IPBegoXNoB5aziyktDE35orgUNzdEI1N1mDlErrDmf_tM1qANjDOtnMSENkXIiUPQa25Q4ZUknuuAEUY0ycTAt8AEj8uj8bQF4AQBiAXd8_jAVKAGLoAHv_f9ygGoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gHmgaoB_-esQKoB9-fsQKoB8qpsQKoB-ulsQKoB-qxsQKoB5m1sQKoB763sQKoB_jCsQKoB_vCsQLYBwDSCC8IgGEQARidATIIioKAgICAgAg6DYBAgMCAgICAqIACqANIvf3BOli8uuzC4LWRA_IIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJT27tkIYtRB6ACgOYCwHICwGADAHaDBEKCxDAqPm-yf-Nh7YBEgIBA6oNAlZOyA0B4g0TCPDk7MLgtZEDFRXsFgUdXAw1j-oNEwjLx-3C4LWRAxUV7BYFHVwMNY_wDQKIDv___________wG4E-QD2BMM0BUByhYCCgD4FgGAFwGyFw4YASoKNjE2ODU3NjUwNboXAjgBqhgXCQAAAABA6PtAEgo2MTY4NTc2NTA1GAGyGAkSAuhZGC4iAQDQGAHoGAHCGQIIAQ&ae=1&ase=2&gclid=EAIaIQobChMIwNqDw-C1kQMVFewWBR1cDDWPEAEYASAAEgKfMPD_BwE&num=1&cid=CAQSoAEAwksa0SQwJj5QxozwcMI4Nx0xyyaVaHz7gdDXfRZZW-WTxOwTosaodzpoa8NA5-X1-kZvde2iUGMM4w1Q-qMMidhueUhBRcB_qQxRkX7_JcYyN-ngGGgY1EPSfH6OMywWUkRGNfRAp2IDMe9X9siqd2btInahvvhb4W1LsTG-HfnystgFg5kVo9Ea1OHNCE7BR4cxm31vWRpKd6NP2OtmGAE&sig=AOD64_2GX7TmWmty5tg4QbMnVeyrfgkIPg&client=ca-pub-4573231550355221&rf=4&nb=9&adurl=https://getstarted.tiktok.com/vn-brand%3Flang%3Dvi%26attr_source%3Dgoogle%26attr_medium%3Dpmax-ad%26attr_campaign_id%3D22675023585%26funnel%3Dprospecting%26targeting%3Dall%26creative%3D%7BCouponOct2025VN%7D%26gad_source%3D5%26gad_campaignid%3D22684776925%26gclid%3DEAIaIQobChMIwNqDw-C1kQMVFewWBR1cDDWPEAEYASAAEgKfMPD_BwE
+                  - img [ref=f13e6]
+                - link "Mở khóa tín dụng TikTok free" [ref=f13e9] [cursor=pointer]:
+                  - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CbuhJS9Y6aYCJHJXY29gP3JjU-QiKzP73gwGZz4bAgRWm4sLTgyoQASDG-9Z5YMEFoAGEjJm8AsgBCeACAKgDAcgDCqoEhAJP0CE-G15gJuUdo0Fdj7NMHMgaGawWCTzyVsOUKJkfZwdZU31SPgppAghLY5cfNMovuE7DYNmooIRJdk8jEbL1pMYHg9ATNgK0NNn0u7liWNsGU6aJRUf7U_Bdiv71BaI6uysdpIcQ6_pH8nIKuEk96u9o6_zBjpeUKO-TTqnod-yjbmD_lv9mIYuRZiYh90VZkGVInNo95wqbPNxiOUCfOO74n6cXCGNs2__PJUaUf8NXxRVbp16uIMEj_9xg26NCcD_IPBegoXNoB5aziyktDE35orgUNzdEI1N1mDlErrDmf_tM1qANjDOtnMSENkXIiUPQa25Q4ZUknuuAEUY0ycTAt8AEj8uj8bQF4AQBiAXd8_jAVKAGLoAHv_f9ygGoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gHmgaoB_-esQKoB9-fsQKoB8qpsQKoB-ulsQKoB-qxsQKoB5m1sQKoB763sQKoB_jCsQKoB_vCsQLYBwDSCC8IgGEQARidATIIioKAgICAgAg6DYBAgMCAgICAqIACqANIvf3BOli8uuzC4LWRA_IIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJT27tkIYtRB6ACgOYCwHICwGADAHaDBEKCxDAqPm-yf-Nh7YBEgIBA6oNAlZOyA0B4g0TCPDk7MLgtZEDFRXsFgUdXAw1j-oNEwjLx-3C4LWRAxUV7BYFHVwMNY_wDQKIDv___________wG4E-QD2BMM0BUByhYCCgD4FgGAFwGyFw4YASoKNjE2ODU3NjUwNboXAjgBqhgXCQAAAABA6PtAEgo2MTY4NTc2NTA1GAGyGAkSAuhZGC4iAQDQGAHoGAHCGQIIAQ&ae=1&ase=2&gclid=EAIaIQobChMIwNqDw-C1kQMVFewWBR1cDDWPEAEYASAAEgKfMPD_BwE&num=1&cid=CAQSoAEAwksa0SQwJj5QxozwcMI4Nx0xyyaVaHz7gdDXfRZZW-WTxOwTosaodzpoa8NA5-X1-kZvde2iUGMM4w1Q-qMMidhueUhBRcB_qQxRkX7_JcYyN-ngGGgY1EPSfH6OMywWUkRGNfRAp2IDMe9X9siqd2btInahvvhb4W1LsTG-HfnystgFg5kVo9Ea1OHNCE7BR4cxm31vWRpKd6NP2OtmGAE&sig=AOD64_2GX7TmWmty5tg4QbMnVeyrfgkIPg&client=ca-pub-4573231550355221&rf=4&nb=0&adurl=https://getstarted.tiktok.com/vn-brand%3Flang%3Dvi%26attr_source%3Dgoogle%26attr_medium%3Dpmax-ad%26attr_campaign_id%3D22675023585%26funnel%3Dprospecting%26targeting%3Dall%26creative%3D%7BCouponOct2025VN%7D%26gad_source%3D5%26gad_campaignid%3D22684776925%26gclid%3DEAIaIQobChMIwNqDw-C1kQMVFewWBR1cDDWPEAEYASAAEgKfMPD_BwE
+              - generic [ref=f13e10]:
+                - link [ref=f13e11] [cursor=pointer]:
+                  - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CbuhJS9Y6aYCJHJXY29gP3JjU-QiKzP73gwGZz4bAgRWm4sLTgyoQASDG-9Z5YMEFoAGEjJm8AsgBCeACAKgDAcgDCqoEhAJP0CE-G15gJuUdo0Fdj7NMHMgaGawWCTzyVsOUKJkfZwdZU31SPgppAghLY5cfNMovuE7DYNmooIRJdk8jEbL1pMYHg9ATNgK0NNn0u7liWNsGU6aJRUf7U_Bdiv71BaI6uysdpIcQ6_pH8nIKuEk96u9o6_zBjpeUKO-TTqnod-yjbmD_lv9mIYuRZiYh90VZkGVInNo95wqbPNxiOUCfOO74n6cXCGNs2__PJUaUf8NXxRVbp16uIMEj_9xg26NCcD_IPBegoXNoB5aziyktDE35orgUNzdEI1N1mDlErrDmf_tM1qANjDOtnMSENkXIiUPQa25Q4ZUknuuAEUY0ycTAt8AEj8uj8bQF4AQBiAXd8_jAVKAGLoAHv_f9ygGoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gHmgaoB_-esQKoB9-fsQKoB8qpsQKoB-ulsQKoB-qxsQKoB5m1sQKoB763sQKoB_jCsQKoB_vCsQLYBwDSCC8IgGEQARidATIIioKAgICAgAg6DYBAgMCAgICAqIACqANIvf3BOli8uuzC4LWRA_IIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJT27tkIYtRB6ACgOYCwHICwGADAHaDBEKCxDAqPm-yf-Nh7YBEgIBA6oNAlZOyA0B4g0TCPDk7MLgtZEDFRXsFgUdXAw1j-oNEwjLx-3C4LWRAxUV7BYFHVwMNY_wDQKIDv___________wG4E-QD2BMM0BUByhYCCgD4FgGAFwGyFw4YASoKNjE2ODU3NjUwNboXAjgBqhgXCQAAAABA6PtAEgo2MTY4NTc2NTA1GAGyGAkSAuhZGC4iAQDQGAHoGAHCGQIIAQ&ae=1&ase=2&gclid=EAIaIQobChMIwNqDw-C1kQMVFewWBR1cDDWPEAEYASAAEgKfMPD_BwE&num=1&cid=CAQSoAEAwksa0SQwJj5QxozwcMI4Nx0xyyaVaHz7gdDXfRZZW-WTxOwTosaodzpoa8NA5-X1-kZvde2iUGMM4w1Q-qMMidhueUhBRcB_qQxRkX7_JcYyN-ngGGgY1EPSfH6OMywWUkRGNfRAp2IDMe9X9siqd2btInahvvhb4W1LsTG-HfnystgFg5kVo9Ea1OHNCE7BR4cxm31vWRpKd6NP2OtmGAE&sig=AOD64_2GX7TmWmty5tg4QbMnVeyrfgkIPg&client=ca-pub-4573231550355221&rf=4&nb=19&adurl=https://getstarted.tiktok.com/vn-brand%3Flang%3Dvi%26attr_source%3Dgoogle%26attr_medium%3Dpmax-ad%26attr_campaign_id%3D22675023585%26funnel%3Dprospecting%26targeting%3Dall%26creative%3D%7BCouponOct2025VN%7D%26gad_source%3D5%26gad_campaignid%3D22684776925%26gclid%3DEAIaIQobChMIwNqDw-C1kQMVFewWBR1cDDWPEAEYASAAEgKfMPD_BwE
+                  - img [ref=f13e12]
+                - link "TikTok" [ref=f13e14] [cursor=pointer]:
+                  - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CbuhJS9Y6aYCJHJXY29gP3JjU-QiKzP73gwGZz4bAgRWm4sLTgyoQASDG-9Z5YMEFoAGEjJm8AsgBCeACAKgDAcgDCqoEhAJP0CE-G15gJuUdo0Fdj7NMHMgaGawWCTzyVsOUKJkfZwdZU31SPgppAghLY5cfNMovuE7DYNmooIRJdk8jEbL1pMYHg9ATNgK0NNn0u7liWNsGU6aJRUf7U_Bdiv71BaI6uysdpIcQ6_pH8nIKuEk96u9o6_zBjpeUKO-TTqnod-yjbmD_lv9mIYuRZiYh90VZkGVInNo95wqbPNxiOUCfOO74n6cXCGNs2__PJUaUf8NXxRVbp16uIMEj_9xg26NCcD_IPBegoXNoB5aziyktDE35orgUNzdEI1N1mDlErrDmf_tM1qANjDOtnMSENkXIiUPQa25Q4ZUknuuAEUY0ycTAt8AEj8uj8bQF4AQBiAXd8_jAVKAGLoAHv_f9ygGoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gHmgaoB_-esQKoB9-fsQKoB8qpsQKoB-ulsQKoB-qxsQKoB5m1sQKoB763sQKoB_jCsQKoB_vCsQLYBwDSCC8IgGEQARidATIIioKAgICAgAg6DYBAgMCAgICAqIACqANIvf3BOli8uuzC4LWRA_IIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJT27tkIYtRB6ACgOYCwHICwGADAHaDBEKCxDAqPm-yf-Nh7YBEgIBA6oNAlZOyA0B4g0TCPDk7MLgtZEDFRXsFgUdXAw1j-oNEwjLx-3C4LWRAxUV7BYFHVwMNY_wDQKIDv___________wG4E-QD2BMM0BUByhYCCgD4FgGAFwGyFw4YASoKNjE2ODU3NjUwNboXAjgBqhgXCQAAAABA6PtAEgo2MTY4NTc2NTA1GAGyGAkSAuhZGC4iAQDQGAHoGAHCGQIIAQ&ae=1&ase=2&gclid=EAIaIQobChMIwNqDw-C1kQMVFewWBR1cDDWPEAEYASAAEgKfMPD_BwE&num=1&cid=CAQSoAEAwksa0SQwJj5QxozwcMI4Nx0xyyaVaHz7gdDXfRZZW-WTxOwTosaodzpoa8NA5-X1-kZvde2iUGMM4w1Q-qMMidhueUhBRcB_qQxRkX7_JcYyN-ngGGgY1EPSfH6OMywWUkRGNfRAp2IDMe9X9siqd2btInahvvhb4W1LsTG-HfnystgFg5kVo9Ea1OHNCE7BR4cxm31vWRpKd6NP2OtmGAE&sig=AOD64_2GX7TmWmty5tg4QbMnVeyrfgkIPg&client=ca-pub-4573231550355221&rf=4&nb=1&adurl=https://getstarted.tiktok.com/vn-brand%3Flang%3Dvi%26attr_source%3Dgoogle%26attr_medium%3Dpmax-ad%26attr_campaign_id%3D22675023585%26funnel%3Dprospecting%26targeting%3Dall%26creative%3D%7BCouponOct2025VN%7D%26gad_source%3D5%26gad_campaignid%3D22684776925%26gclid%3DEAIaIQobChMIwNqDw-C1kQMVFewWBR1cDDWPEAEYASAAEgKfMPD_BwE
+                - link "Đăng Ký" [ref=f13e15] [cursor=pointer]:
+                  - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CbuhJS9Y6aYCJHJXY29gP3JjU-QiKzP73gwGZz4bAgRWm4sLTgyoQASDG-9Z5YMEFoAGEjJm8AsgBCeACAKgDAcgDCqoEhAJP0CE-G15gJuUdo0Fdj7NMHMgaGawWCTzyVsOUKJkfZwdZU31SPgppAghLY5cfNMovuE7DYNmooIRJdk8jEbL1pMYHg9ATNgK0NNn0u7liWNsGU6aJRUf7U_Bdiv71BaI6uysdpIcQ6_pH8nIKuEk96u9o6_zBjpeUKO-TTqnod-yjbmD_lv9mIYuRZiYh90VZkGVInNo95wqbPNxiOUCfOO74n6cXCGNs2__PJUaUf8NXxRVbp16uIMEj_9xg26NCcD_IPBegoXNoB5aziyktDE35orgUNzdEI1N1mDlErrDmf_tM1qANjDOtnMSENkXIiUPQa25Q4ZUknuuAEUY0ycTAt8AEj8uj8bQF4AQBiAXd8_jAVKAGLoAHv_f9ygGoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gHmgaoB_-esQKoB9-fsQKoB8qpsQKoB-ulsQKoB-qxsQKoB5m1sQKoB763sQKoB_jCsQKoB_vCsQLYBwDSCC8IgGEQARidATIIioKAgICAgAg6DYBAgMCAgICAqIACqANIvf3BOli8uuzC4LWRA_IIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJT27tkIYtRB6ACgOYCwHICwGADAHaDBEKCxDAqPm-yf-Nh7YBEgIBA6oNAlZOyA0B4g0TCPDk7MLgtZEDFRXsFgUdXAw1j-oNEwjLx-3C4LWRAxUV7BYFHVwMNY_wDQKIDv___________wG4E-QD2BMM0BUByhYCCgD4FgGAFwGyFw4YASoKNjE2ODU3NjUwNboXAjgBqhgXCQAAAABA6PtAEgo2MTY4NTc2NTA1GAGyGAkSAuhZGC4iAQDQGAHoGAHCGQIIAQ&ae=1&ase=2&gclid=EAIaIQobChMIwNqDw-C1kQMVFewWBR1cDDWPEAEYASAAEgKfMPD_BwE&num=1&cid=CAQSoAEAwksa0SQwJj5QxozwcMI4Nx0xyyaVaHz7gdDXfRZZW-WTxOwTosaodzpoa8NA5-X1-kZvde2iUGMM4w1Q-qMMidhueUhBRcB_qQxRkX7_JcYyN-ngGGgY1EPSfH6OMywWUkRGNfRAp2IDMe9X9siqd2btInahvvhb4W1LsTG-HfnystgFg5kVo9Ea1OHNCE7BR4cxm31vWRpKd6NP2OtmGAE&sig=AOD64_2GX7TmWmty5tg4QbMnVeyrfgkIPg&client=ca-pub-4573231550355221&rf=4&nb=8&adurl=https://getstarted.tiktok.com/vn-brand%3Flang%3Dvi%26attr_source%3Dgoogle%26attr_medium%3Dpmax-ad%26attr_campaign_id%3D22675023585%26funnel%3Dprospecting%26targeting%3Dall%26creative%3D%7BCouponOct2025VN%7D%26gad_source%3D5%26gad_campaignid%3D22684776925%26gclid%3DEAIaIQobChMIwNqDw-C1kQMVFewWBR1cDDWPEAEYASAAEgKfMPD_BwE
+                  - generic [ref=f13e17]: Đăng Ký
+            - generic [ref=f13e18]:
+              - link [ref=f13e20] [cursor=pointer]:
+                - /url: https://adssettings.google.com/whythisad?source=display&reasons=AUJjZ_5-bGACwQfBtzZfdZ9i6bHqIunW2NYSkqr1p1cPNwKA2ptsuWetm2xxjsiEjgrhj-uIyHcFx4bYMm7FMkLYnxoiMRORh8AsBKjFzivoZEWxsnLNIwnSQfeGIoUMIBJUkH9TvyBNGleibIiD01NJmdu90y2RoA2YlCrXD_q_I847yPc-BpqOxhBPg4esI7MpE1oqWNnR-MdVqpj3DeUd8SIVLo8aXNfbXRp3bywT5xZswWgRpzopzBAnwxQTyEEBfYlCKBrEVA8JOeGTSiHikAj80t7fnPX25pts3evMHIN0TagWzOq52Brc-CaHOp9FAL432xmCnUhMOjYRfVOjpCWKy7LUchxIcDacDReM5sG_p4Bq_glqX8Sr7VtZCmXGMZsZJc_VPeBu1XBBz7Cs1umBTlOPH0ZSPFpHidqadhkuW25gflk5iAf5j0-VseppFhDT_eFKAqRJPptntkkTXAxjVp7TtpX-SKtAxLYWiO45kr_zxp7U-Bwk8lvB1Qo3NS8tcY5ouFJf4lGB7xwsZbpF_3G2WrMmmC83LmEzSFfe7Csx6gz_q9vPyGV9xZCWBgfvZKPSRCC6pRP35-YMD6j664INRrcOKnTjCyUNUqAw-5qRNG8m3TR3oj9MejQR9e_om7G2dWjyE1m-DnmqXR0xqsKv6OtNaPna8mG_rfyj2TFn6zevNsQKp4-I7Jwe3RKjZXXZymFwUiKJxM1MWpKsLvOlYf_o981Er0PjE8yQyyyhOIWkg1NejpgBYRW7DQa-pS6ZQZW8NMZbkJcx71IZpBxmijsSZEkjRI-z9me0J-EQnKYz9Esz1_N6NoNB-e2uYQ4_VPFtMLmdNnhxh6C9XpkzLAdSZn0NzRAhORQSg4mNPRpGg3ZM6_a7Yhw_deBOIloVk-D2tKWMMV9Im_ARHv4pjHYF-ryXlBJa5bldYzLlH_hQ1kLpvH0wRhetzEl6KBYcikW3vTSnp5MW86ezRZU0DbeJeH7Y-ibdfL-ju0FzfhRk1npNodqkoPgsCN6QqMqp0rbTkSgHcb5DmeAd2Tza3GuHVmVxeN0mFpez-sq3H8qNEuHDb-PLmqZBWIGP4_4ICZ41H8ft3higIjTd6AWTIA77dYac5SPCCszFZXnRi0xO1J-yBO6S8XPRpUWKn0QAtFyZeijTnRy0h1o5nVmYOqWpTq2R49PWzPybp_DRDmWrgBtxkTCqAhZeRyTyC8dKyunEd4Xy5gvcbiiRPVk6eRnJC0I5kQh9j2veoEnt3mkRLx9jGflQAR3o_W1hWBzMqgYA43aDQQQ9gH2JkoRdBYKsORVYHC-9gjwSkRHNQFKPT9MxgucyPiHBug8Nx_hG4PY2PFJeBE_SvFecWIlcLTj3VqQwJJBziKdkntrJlE0PrYf2I6t12JnK4UIkOnl0Ne9i_8R8WtuAGHXsGvRvsX6R8E-bsHgEPJWAbtY6JAsvhGNVAsZBlqFrmGOq1QLxc4joKEF6ZQGrGqI9vyIIePU0PMOrLiCfW4Q3GxKDn6eEFlY0IXsT5XQ_WgcsTcVHPbRdLVDAZ5k80kzl1QbQIj4xP2qhCrN3wIukEUVTkCj9GLDq6nZ6sK5ILBnR-HLmRzQN30hBdrdvzdrvk8Icl8MPT8IZMW3mPmvgbC_4LQCCSuIR_W8TkJVTVAqtwxSwedRnJdKtNNW-DVy1xGiQFXHwujvs2jftADYgbB7is2ta6y3W85RihHVoW7A_X6dvJN8VOqWjH3eUTTgPU6j-eseVmHqjgBa5BF4hXxwfKi5XQmhhUe-GFcr_IJ1GHfJ3IS8DjibFvX54LujSFjrLctYnS_X3RCMvVL-M04xWu-clHO4VXbHUeRGQkofcoP-Z-nWyT1nJ6_tW2jCNmlM-QpKbABHguJ9DuxsB9swusLCxQiO0f1ggUj1Um8u7gxPkidr53Re-9TrrBDG_mMN6JgLxUGfqjf291NkL8Jfp-SM7DEfCNBFmLu-4916Twue1yLi4NJW65BM98rYSvvh-vWLmzDvVj03nAd1R0bYA2UhzsYehrLcCViJQRTYa3Z2uJjp1doCGXo7saQophJkVnYMrbOI0xCVcIsfhPquARxpISdG6AMQKly22g6n4_1wOtR_t42Sy0o_CMWddU1JCm6SclC3zKPkaZtIFxh7E62OogpABa642RXn8x7pL8WuYXYhTX6xnm1YqSQcRBHAkBsJiLsTEmYk9xxnqskmqdvb-dV4Yg-bffF3a_gEmZqLa3ZsCqjkYxKlLvKvlTb_j-WquTpRSPt6-A5SXObM6vPef3WssTEraaT3TWXO_SXA6ylomyZZWznnMZj_gBNnmozVReBHNv3Avc0mU1TLB9n_CruMoAlY_U2iL6Irk_vqNvZphLFvG65eDWwpzLPL1mc1WvSpnOOe-Q12JcCTqHntbQ-A7rTZ9_037utn1FUI2cXI_382zctIqwPYaKXugr48sSQUYHLmQva43OQgmih4&opi=122715837
+                - img [ref=f13e22]
+              - link [ref=f13e24] [cursor=pointer]:
+                - /url: https://adssettings.google.com/whythisad?source=display&reasons=AUJjZ_5-bGACwQfBtzZfdZ9i6bHqIunW2NYSkqr1p1cPNwKA2ptsuWetm2xxjsiEjgrhj-uIyHcFx4bYMm7FMkLYnxoiMRORh8AsBKjFzivoZEWxsnLNIwnSQfeGIoUMIBJUkH9TvyBNGleibIiD01NJmdu90y2RoA2YlCrXD_q_I847yPc-BpqOxhBPg4esI7MpE1oqWNnR-MdVqpj3DeUd8SIVLo8aXNfbXRp3bywT5xZswWgRpzopzBAnwxQTyEEBfYlCKBrEVA8JOeGTSiHikAj80t7fnPX25pts3evMHIN0TagWzOq52Brc-CaHOp9FAL432xmCnUhMOjYRfVOjpCWKy7LUchxIcDacDReM5sG_p4Bq_glqX8Sr7VtZCmXGMZsZJc_VPeBu1XBBz7Cs1umBTlOPH0ZSPFpHidqadhkuW25gflk5iAf5j0-VseppFhDT_eFKAqRJPptntkkTXAxjVp7TtpX-SKtAxLYWiO45kr_zxp7U-Bwk8lvB1Qo3NS8tcY5ouFJf4lGB7xwsZbpF_3G2WrMmmC83LmEzSFfe7Csx6gz_q9vPyGV9xZCWBgfvZKPSRCC6pRP35-YMD6j664INRrcOKnTjCyUNUqAw-5qRNG8m3TR3oj9MejQR9e_om7G2dWjyE1m-DnmqXR0xqsKv6OtNaPna8mG_rfyj2TFn6zevNsQKp4-I7Jwe3RKjZXXZymFwUiKJxM1MWpKsLvOlYf_o981Er0PjE8yQyyyhOIWkg1NejpgBYRW7DQa-pS6ZQZW8NMZbkJcx71IZpBxmijsSZEkjRI-z9me0J-EQnKYz9Esz1_N6NoNB-e2uYQ4_VPFtMLmdNnhxh6C9XpkzLAdSZn0NzRAhORQSg4mNPRpGg3ZM6_a7Yhw_deBOIloVk-D2tKWMMV9Im_ARHv4pjHYF-ryXlBJa5bldYzLlH_hQ1kLpvH0wRhetzEl6KBYcikW3vTSnp5MW86ezRZU0DbeJeH7Y-ibdfL-ju0FzfhRk1npNodqkoPgsCN6QqMqp0rbTkSgHcb5DmeAd2Tza3GuHVmVxeN0mFpez-sq3H8qNEuHDb-PLmqZBWIGP4_4ICZ41H8ft3higIjTd6AWTIA77dYac5SPCCszFZXnRi0xO1J-yBO6S8XPRpUWKn0QAtFyZeijTnRy0h1o5nVmYOqWpTq2R49PWzPybp_DRDmWrgBtxkTCqAhZeRyTyC8dKyunEd4Xy5gvcbiiRPVk6eRnJC0I5kQh9j2veoEnt3mkRLx9jGflQAR3o_W1hWBzMqgYA43aDQQQ9gH2JkoRdBYKsORVYHC-9gjwSkRHNQFKPT9MxgucyPiHBug8Nx_hG4PY2PFJeBE_SvFecWIlcLTj3VqQwJJBziKdkntrJlE0PrYf2I6t12JnK4UIkOnl0Ne9i_8R8WtuAGHXsGvRvsX6R8E-bsHgEPJWAbtY6JAsvhGNVAsZBlqFrmGOq1QLxc4joKEF6ZQGrGqI9vyIIePU0PMOrLiCfW4Q3GxKDn6eEFlY0IXsT5XQ_WgcsTcVHPbRdLVDAZ5k80kzl1QbQIj4xP2qhCrN3wIukEUVTkCj9GLDq6nZ6sK5ILBnR-HLmRzQN30hBdrdvzdrvk8Icl8MPT8IZMW3mPmvgbC_4LQCCSuIR_W8TkJVTVAqtwxSwedRnJdKtNNW-DVy1xGiQFXHwujvs2jftADYgbB7is2ta6y3W85RihHVoW7A_X6dvJN8VOqWjH3eUTTgPU6j-eseVmHqjgBa5BF4hXxwfKi5XQmhhUe-GFcr_IJ1GHfJ3IS8DjibFvX54LujSFjrLctYnS_X3RCMvVL-M04xWu-clHO4VXbHUeRGQkofcoP-Z-nWyT1nJ6_tW2jCNmlM-QpKbABHguJ9DuxsB9swusLCxQiO0f1ggUj1Um8u7gxPkidr53Re-9TrrBDG_mMN6JgLxUGfqjf291NkL8Jfp-SM7DEfCNBFmLu-4916Twue1yLi4NJW65BM98rYSvvh-vWLmzDvVj03nAd1R0bYA2UhzsYehrLcCViJQRTYa3Z2uJjp1doCGXo7saQophJkVnYMrbOI0xCVcIsfhPquARxpISdG6AMQKly22g6n4_1wOtR_t42Sy0o_CMWddU1JCm6SclC3zKPkaZtIFxh7E62OogpABa642RXn8x7pL8WuYXYhTX6xnm1YqSQcRBHAkBsJiLsTEmYk9xxnqskmqdvb-dV4Yg-bffF3a_gEmZqLa3ZsCqjkYxKlLvKvlTb_j-WquTpRSPt6-A5SXObM6vPef3WssTEraaT3TWXO_SXA6ylomyZZWznnMZj_gBNnmozVReBHNv3Avc0mU1TLB9n_CruMoAlY_U2iL6Irk_vqNvZphLFvG65eDWwpzLPL1mc1WvSpnOOe-Q12JcCTqHntbQ-A7rTZ9_037utn1FUI2cXI_382zctIqwPYaKXugr48sSQUYHLmQva43OQgmih4&opi=122715837
+                - img [ref=f13e26]
+            - img [ref=f13e29] [cursor=pointer]
+            - generic [ref=f13e40]:
+              - img [ref=f13e43]
+              - generic [ref=f13e46]:
+                - text: Ads by
+                - img [ref=f13e47]
+              - generic [ref=f13e50]:
+                - generic [ref=f13e53] [cursor=pointer]: Send feedback
+                - link [ref=f13e55] [cursor=pointer]:
+                  - /url: https://adssettings.google.com/whythisad?source=display&reasons=AUJjZ_5-bGACwQfBtzZfdZ9i6bHqIunW2NYSkqr1p1cPNwKA2ptsuWetm2xxjsiEjgrhj-uIyHcFx4bYMm7FMkLYnxoiMRORh8AsBKjFzivoZEWxsnLNIwnSQfeGIoUMIBJUkH9TvyBNGleibIiD01NJmdu90y2RoA2YlCrXD_q_I847yPc-BpqOxhBPg4esI7MpE1oqWNnR-MdVqpj3DeUd8SIVLo8aXNfbXRp3bywT5xZswWgRpzopzBAnwxQTyEEBfYlCKBrEVA8JOeGTSiHikAj80t7fnPX25pts3evMHIN0TagWzOq52Brc-CaHOp9FAL432xmCnUhMOjYRfVOjpCWKy7LUchxIcDacDReM5sG_p4Bq_glqX8Sr7VtZCmXGMZsZJc_VPeBu1XBBz7Cs1umBTlOPH0ZSPFpHidqadhkuW25gflk5iAf5j0-VseppFhDT_eFKAqRJPptntkkTXAxjVp7TtpX-SKtAxLYWiO45kr_zxp7U-Bwk8lvB1Qo3NS8tcY5ouFJf4lGB7xwsZbpF_3G2WrMmmC83LmEzSFfe7Csx6gz_q9vPyGV9xZCWBgfvZKPSRCC6pRP35-YMD6j664INRrcOKnTjCyUNUqAw-5qRNG8m3TR3oj9MejQR9e_om7G2dWjyE1m-DnmqXR0xqsKv6OtNaPna8mG_rfyj2TFn6zevNsQKp4-I7Jwe3RKjZXXZymFwUiKJxM1MWpKsLvOlYf_o981Er0PjE8yQyyyhOIWkg1NejpgBYRW7DQa-pS6ZQZW8NMZbkJcx71IZpBxmijsSZEkjRI-z9me0J-EQnKYz9Esz1_N6NoNB-e2uYQ4_VPFtMLmdNnhxh6C9XpkzLAdSZn0NzRAhORQSg4mNPRpGg3ZM6_a7Yhw_deBOIloVk-D2tKWMMV9Im_ARHv4pjHYF-ryXlBJa5bldYzLlH_hQ1kLpvH0wRhetzEl6KBYcikW3vTSnp5MW86ezRZU0DbeJeH7Y-ibdfL-ju0FzfhRk1npNodqkoPgsCN6QqMqp0rbTkSgHcb5DmeAd2Tza3GuHVmVxeN0mFpez-sq3H8qNEuHDb-PLmqZBWIGP4_4ICZ41H8ft3higIjTd6AWTIA77dYac5SPCCszFZXnRi0xO1J-yBO6S8XPRpUWKn0QAtFyZeijTnRy0h1o5nVmYOqWpTq2R49PWzPybp_DRDmWrgBtxkTCqAhZeRyTyC8dKyunEd4Xy5gvcbiiRPVk6eRnJC0I5kQh9j2veoEnt3mkRLx9jGflQAR3o_W1hWBzMqgYA43aDQQQ9gH2JkoRdBYKsORVYHC-9gjwSkRHNQFKPT9MxgucyPiHBug8Nx_hG4PY2PFJeBE_SvFecWIlcLTj3VqQwJJBziKdkntrJlE0PrYf2I6t12JnK4UIkOnl0Ne9i_8R8WtuAGHXsGvRvsX6R8E-bsHgEPJWAbtY6JAsvhGNVAsZBlqFrmGOq1QLxc4joKEF6ZQGrGqI9vyIIePU0PMOrLiCfW4Q3GxKDn6eEFlY0IXsT5XQ_WgcsTcVHPbRdLVDAZ5k80kzl1QbQIj4xP2qhCrN3wIukEUVTkCj9GLDq6nZ6sK5ILBnR-HLmRzQN30hBdrdvzdrvk8Icl8MPT8IZMW3mPmvgbC_4LQCCSuIR_W8TkJVTVAqtwxSwedRnJdKtNNW-DVy1xGiQFXHwujvs2jftADYgbB7is2ta6y3W85RihHVoW7A_X6dvJN8VOqWjH3eUTTgPU6j-eseVmHqjgBa5BF4hXxwfKi5XQmhhUe-GFcr_IJ1GHfJ3IS8DjibFvX54LujSFjrLctYnS_X3RCMvVL-M04xWu-clHO4VXbHUeRGQkofcoP-Z-nWyT1nJ6_tW2jCNmlM-QpKbABHguJ9DuxsB9swusLCxQiO0f1ggUj1Um8u7gxPkidr53Re-9TrrBDG_mMN6JgLxUGfqjf291NkL8Jfp-SM7DEfCNBFmLu-4916Twue1yLi4NJW65BM98rYSvvh-vWLmzDvVj03nAd1R0bYA2UhzsYehrLcCViJQRTYa3Z2uJjp1doCGXo7saQophJkVnYMrbOI0xCVcIsfhPquARxpISdG6AMQKly22g6n4_1wOtR_t42Sy0o_CMWddU1JCm6SclC3zKPkaZtIFxh7E62OogpABa642RXn8x7pL8WuYXYhTX6xnm1YqSQcRBHAkBsJiLsTEmYk9xxnqskmqdvb-dV4Yg-bffF3a_gEmZqLa3ZsCqjkYxKlLvKvlTb_j-WquTpRSPt6-A5SXObM6vPef3WssTEraaT3TWXO_SXA6ylomyZZWznnMZj_gBNnmozVReBHNv3Avc0mU1TLB9n_CruMoAlY_U2iL6Irk_vqNvZphLFvG65eDWwpzLPL1mc1WvSpnOOe-Q12JcCTqHntbQ-A7rTZ9_037utn1FUI2cXI_382zctIqwPYaKXugr48sSQUYHLmQva43OQgmih4&opi=122715837
+                  - generic [ref=f13e56]:
+                    - text: Why this ad?
+                    - img [ref=f13e57]
+            - generic [ref=f13e59]:
+              - generic [ref=f13e62] [cursor=pointer]: Ad was inappropriate
+              - generic [ref=f13e65] [cursor=pointer]: Not interested in this ad
+              - generic [ref=f13e68] [cursor=pointer]: Ad covered content
+              - generic [ref=f13e71] [cursor=pointer]: Seen this ad multiple times
+            - generic [ref=f13e77]: Thanks. Feedback improves Google ads
+            - generic [ref=f13e83]:
+              - text: Ad closed by
+              - img [ref=f13e84]
+        - generic [ref=e147]:
+          - heading "Date Picker" [level=1] [ref=e148]
+          - generic [ref=e149]:
+            - generic [ref=e150]: Select Date
+            - textbox [ref=e154]: 06/28/1983
+          - generic [ref=e155]:
+            - generic [ref=e156]: Date And Time
+            - generic [ref=e157]:
+              - textbox [ref=e160]: December 11, 2025 9:33 PM
+              - generic [ref=e163]:
+                - button "Previous Month" [ref=e165] [cursor=pointer]
+                - button "Next Month" [ref=e166] [cursor=pointer]
+                - generic [ref=e167]:
+                  - generic [ref=e168]:
+                    - generic [ref=e169]: January 2025
+                    - generic [ref=e170]:
+                      - generic [ref=e172]: January
+                      - generic [ref=e175]:
+                        - generic [ref=e178]: "2030"
+                        - generic [ref=e179]: "2029"
+                        - generic [ref=e180]: "2028"
+                        - generic [ref=e181]: "2027"
+                        - generic [ref=e182]: "2026"
+                        - generic [ref=e183]:
+                          - generic [ref=e184]: ✓
+                          - text: "2025"
+                        - generic [ref=e185]: "2024"
+                        - generic [ref=e186]: "2023"
+                        - generic [ref=e187]: "2022"
+                        - generic [ref=e188]: "2021"
+                        - generic [ref=e189]: "2020"
+                    - generic [ref=e192]:
+                      - generic [ref=e193]: Su
+                      - generic [ref=e194]: Mo
+                      - generic [ref=e195]: Tu
+                      - generic [ref=e196]: We
+                      - generic [ref=e197]: Th
+                      - generic [ref=e198]: Fr
+                      - generic [ref=e199]: Sa
+                  - listbox "month 2025-01" [ref=e200]:
+                    - generic [ref=e201]:
+                      - option "Choose Sunday, December 29th, 2024" [ref=e202] [cursor=pointer]: "29"
+                      - option "Choose Monday, December 30th, 2024" [ref=e203] [cursor=pointer]: "30"
+                      - option "Choose Tuesday, December 31st, 2024" [ref=e204] [cursor=pointer]: "31"
+                      - option "Choose Wednesday, January 1st, 2025" [ref=e205] [cursor=pointer]: "1"
+                      - option "Choose Thursday, January 2nd, 2025" [ref=e206] [cursor=pointer]: "2"
+                      - option "Choose Friday, January 3rd, 2025" [ref=e207] [cursor=pointer]: "3"
+                      - option "Choose Saturday, January 4th, 2025" [ref=e208] [cursor=pointer]: "4"
+                    - generic [ref=e209]:
+                      - option "Choose Sunday, January 5th, 2025" [ref=e210] [cursor=pointer]: "5"
+                      - option "Choose Monday, January 6th, 2025" [ref=e211] [cursor=pointer]: "6"
+                      - option "Choose Tuesday, January 7th, 2025" [ref=e212] [cursor=pointer]: "7"
+                      - option "Choose Wednesday, January 8th, 2025" [ref=e213] [cursor=pointer]: "8"
+                      - option "Choose Thursday, January 9th, 2025" [ref=e214] [cursor=pointer]: "9"
+                      - option "Choose Friday, January 10th, 2025" [ref=e215] [cursor=pointer]: "10"
+                      - option "Choose Saturday, January 11th, 2025" [ref=e216] [cursor=pointer]: "11"
+                    - generic [ref=e217]:
+                      - option "Choose Sunday, January 12th, 2025" [ref=e218] [cursor=pointer]: "12"
+                      - option "Choose Monday, January 13th, 2025" [ref=e219] [cursor=pointer]: "13"
+                      - option "Choose Tuesday, January 14th, 2025" [ref=e220] [cursor=pointer]: "14"
+                      - option "Choose Wednesday, January 15th, 2025" [ref=e221] [cursor=pointer]: "15"
+                      - option "Choose Thursday, January 16th, 2025" [ref=e222] [cursor=pointer]: "16"
+                      - option "Choose Friday, January 17th, 2025" [ref=e223] [cursor=pointer]: "17"
+                      - option "Choose Saturday, January 18th, 2025" [ref=e224] [cursor=pointer]: "18"
+                    - generic [ref=e225]:
+                      - option "Choose Sunday, January 19th, 2025" [ref=e226] [cursor=pointer]: "19"
+                      - option "Choose Monday, January 20th, 2025" [ref=e227] [cursor=pointer]: "20"
+                      - option "Choose Tuesday, January 21st, 2025" [ref=e228] [cursor=pointer]: "21"
+                      - option "Choose Wednesday, January 22nd, 2025" [ref=e229] [cursor=pointer]: "22"
+                      - option "Choose Thursday, January 23rd, 2025" [ref=e230] [cursor=pointer]: "23"
+                      - option "Choose Friday, January 24th, 2025" [ref=e231] [cursor=pointer]: "24"
+                      - option "Choose Saturday, January 25th, 2025" [ref=e232] [cursor=pointer]: "25"
+                    - generic [ref=e233]:
+                      - option "Choose Sunday, January 26th, 2025" [ref=e234] [cursor=pointer]: "26"
+                      - option "Choose Monday, January 27th, 2025" [ref=e235] [cursor=pointer]: "27"
+                      - option "Choose Tuesday, January 28th, 2025" [ref=e236] [cursor=pointer]: "28"
+                      - option "Choose Wednesday, January 29th, 2025" [ref=e237] [cursor=pointer]: "29"
+                      - option "Choose Thursday, January 30th, 2025" [ref=e238] [cursor=pointer]: "30"
+                      - option "Choose Friday, January 31st, 2025" [ref=e239] [cursor=pointer]: "31"
+                      - option "Choose Saturday, February 1st, 2025" [ref=e240] [cursor=pointer]: "1"
+                - generic [ref=e241]:
+                  - generic [ref=e243]: time
+                  - list [ref=e246]:
+                    - listitem [ref=e247]: 00:00
+                    - listitem [ref=e248]: 00:15
+                    - listitem [ref=e249]: 00:30
+                    - listitem [ref=e250]: 00:45
+                    - listitem [ref=e251]: 01:00
+                    - listitem [ref=e252]: 01:15
+                    - listitem [ref=e253]: 01:30
+                    - listitem [ref=e254]: 01:45
+                    - listitem [ref=e255]: 02:00
+                    - listitem [ref=e256]: 02:15
+                    - listitem [ref=e257]: 02:30
+                    - listitem [ref=e258]: 02:45
+                    - listitem [ref=e259]: 03:00
+                    - listitem [ref=e260]: 03:15
+                    - listitem [ref=e261]: 03:30
+                    - listitem [ref=e262]: 03:45
+                    - listitem [ref=e263]: 04:00
+                    - listitem [ref=e264]: 04:15
+                    - listitem [ref=e265]: 04:30
+                    - listitem [ref=e266]: 04:45
+                    - listitem [ref=e267]: 05:00
+                    - listitem [ref=e268]: 05:15
+                    - listitem [ref=e269]: 05:30
+                    - listitem [ref=e270]: 05:45
+                    - listitem [ref=e271]: 06:00
+                    - listitem [ref=e272]: 06:15
+                    - listitem [ref=e273]: 06:30
+                    - listitem [ref=e274]: 06:45
+                    - listitem [ref=e275]: 07:00
+                    - listitem [ref=e276]: 07:15
+                    - listitem [ref=e277]: 07:30
+                    - listitem [ref=e278]: 07:45
+                    - listitem [ref=e279]: 08:00
+                    - listitem [ref=e280]: 08:15
+                    - listitem [ref=e281]: 08:30
+                    - listitem [ref=e282]: 08:45
+                    - listitem [ref=e283]: 09:00
+                    - listitem [ref=e284]: 09:15
+                    - listitem [ref=e285]: 09:30
+                    - listitem [ref=e286]: 09:45
+                    - listitem [ref=e287]: 10:00
+                    - listitem [ref=e288]: 10:15
+                    - listitem [ref=e289]: 10:30
+                    - listitem [ref=e290]: 10:45
+                    - listitem [ref=e291]: 11:00
+                    - listitem [ref=e292]: 11:15
+                    - listitem [ref=e293]: 11:30
+                    - listitem [ref=e294]: 11:45
+                    - listitem [ref=e295]: 12:00
+                    - listitem [ref=e296]: 12:15
+                    - listitem [ref=e297]: 12:30
+                    - listitem [ref=e298]: 12:45
+                    - listitem [ref=e299]: 13:00
+                    - listitem [ref=e300]: 13:15
+                    - listitem [ref=e301]: 13:30
+                    - listitem [ref=e302]: 13:45
+                    - listitem [ref=e303]: 14:00
+                    - listitem [ref=e304]: 14:15
+                    - listitem [ref=e305]: 14:30
+                    - listitem [ref=e306]: 14:45
+                    - listitem [ref=e307]: 15:00
+                    - listitem [ref=e308]: 15:15
+                    - listitem [ref=e309]: 15:30
+                    - listitem [ref=e310]: 15:45
+                    - listitem [ref=e311]: 16:00
+                    - listitem [ref=e312]: 16:15
+                    - listitem [ref=e313]: 16:30
+                    - listitem [ref=e314]: 16:45
+                    - listitem [ref=e315]: 17:00
+                    - listitem [ref=e316]: 17:15
+                    - listitem [ref=e317]: 17:30
+                    - listitem [ref=e318]: 17:45
+                    - listitem [ref=e319]: 18:00
+                    - listitem [ref=e320]: 18:15
+                    - listitem [ref=e321]: 18:30
+                    - listitem [ref=e322]: 18:45
+                    - listitem [ref=e323]: 19:00
+                    - listitem [ref=e324]: 19:15
+                    - listitem [ref=e325]: 19:30
+                    - listitem [ref=e326]: 19:45
+                    - listitem [ref=e327]: 20:00
+                    - listitem [ref=e328]: 20:15
+                    - listitem [ref=e329]: 20:30
+                    - listitem [ref=e330]: 20:45
+                    - listitem [ref=e331]: 21:00
+                    - listitem [ref=e332]: 21:15
+                    - listitem [ref=e333]: 21:30
+                    - listitem [ref=e334]: 21:45
+                    - listitem [ref=e335]: 22:00
+                    - listitem [ref=e336]: 22:15
+                    - listitem [ref=e337]: 22:30
+                    - listitem [ref=e338]: 22:45
+                    - listitem [ref=e339]: 23:00
+                    - listitem [ref=e340]: 23:15
+                    - listitem [ref=e341]: 23:30
+                    - listitem [ref=e342]: 23:45
+        - iframe [ref=e346]:
+          
+      - generic [ref=e351]:
+        - img "Build PlayWright tests with AI" [ref=e353] [cursor=pointer]
+        - iframe [ref=e356]:
+          
+    - contentinfo [ref=e357]:
+      - generic [ref=e358]: © 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED.
+```
