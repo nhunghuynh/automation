@@ -228,7 +228,7 @@ test.describe('Practice elemements on demoqa page - Widgets', () => {
         await whatTab.click();
 
         //Verify 'What' tab content
-        const whatContent = page.locator('#tabpanel-1 p').first();
+        const whatContent = page.locator('#demo-tabpane-what p').first();
         await expect(whatContent).toContainText('Lorem Ipsum is simply dummy text of the printing and typesetting industry.');
         
         //Click on 'Origin' tab
@@ -236,7 +236,7 @@ test.describe('Practice elemements on demoqa page - Widgets', () => {
         await originTab.click();
 
         //Verify 'Origin' tab content
-        const originContent = page.locator('#tabpanel-2 p').first();
+        const originContent = page.locator('#demo-tabpane-origin p').first();
         await expect(originContent).toContainText('Contrary to popular belief, Lorem Ipsum is not simply random text.');
 
         //Click on 'Use' tab
@@ -244,11 +244,160 @@ test.describe('Practice elemements on demoqa page - Widgets', () => {
         await useTab.click();
 
         //Verify 'Use' tab content
-        const useContent = page.locator('#tabpanel-3 p').first();
+        const useContent = page.locator('#demo-tabpane-use p').first();
         await expect(useContent).toContainText('It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.');
         
         //Verify 'More' tab is disabled
         const moreTab = page.getByRole('tab', {name: 'More'});
         await expect(moreTab).toBeDisabled();
-    })
+    });
+
+    //Test07: Tool Tips
+    test('Test07: Tool Tips', async ({page}) => {
+        //Click Tool Tips button on the left menu
+        await page.getByRole('listitem').filter({hasText: 'Tool Tips'}).click();
+        
+        //Hover over the button to display tooltip
+        const button = page.getByRole('button', {name: 'Hover me to see'});
+        await button.hover();
+
+        //Verify tooltip text for button
+        const buttonTooltip = page.locator('.tooltip-inner');
+        await expect(buttonTooltip).toHaveText('You hovered over the Button');
+
+        //Verify tooltip text for text field
+        const textField = page.locator('#toolTipTextField');
+        await textField.hover();
+
+        //Verify tooltip text for text field
+        const textFieldTooltip = page.locator('.tooltip-inner').nth(1);
+        await expect(textFieldTooltip).toHaveText('You hovered over the text field');
+
+        //Hover over the link to display tooltip
+        const contraryLink = page.getByRole('link', {name: 'Contrary'});
+        await contraryLink.hover();
+
+        //Verify tooltip text for link
+        const linkTooltip = page.locator('.tooltip-inner').nth(1);
+        await expect(linkTooltip).toHaveText('You hovered over the Contrary');
+
+        //Hover over the link to display tooltip
+        await page.getByRole('link', {name: '1.10.32'}).hover();
+        
+        //Verify tooltip text for link
+        const linkTooltip2 = page.locator('.tooltip-inner').nth(1);
+        await expect(linkTooltip2).toHaveText('You hovered over the 1.10.32');  
+    });
+
+    //Test08: Menu
+    test('Test08: Menu', async ({page}) => {
+        //Click Menu button on the left menu
+        await page.getByRole('listitem').filter({hasText: /^Menu$/}).click();
+
+        //Verify number of main menu items is 3
+        const menuItems = page.locator('#nav li').filter({hasText: /Main Item/});
+        await expect(menuItems).toHaveCount(3);
+
+        //Verify Menu Item 1 has no submenu
+        const menuItem1 = menuItems.nth(0);
+        await menuItem1.hover();
+        const subMenu1 = menuItem1.locator('ul li');
+        await expect(subMenu1).toHaveCount(0);
+
+        //Verify Main Menu Item 2 has 3 submenu items
+        const menuItem2 = menuItems.nth(1);
+        await menuItem2.hover();
+        const subMenu2 = menuItem2.locator('ul>li').filter({hasNotText: /^Sub Sub Item/i});
+        await expect(subMenu2).toHaveCount(3);
+
+        //Verify Sub Menu Item 2.3 has 2 submenu items
+        const subMenuItem23 = subMenu2.nth(2);
+        await subMenuItem23.hover();
+        const subSubMenuItems = subMenuItem23.locator('ul li');
+        await expect(subSubMenuItems).toHaveCount(2);
+
+        //Click on Sub Sub Item 2.3.1
+        const subSubMenuItem231 = subSubMenuItems.nth(0);
+        await subSubMenuItem231.click();
+        
+        //There is no visible change on the page after clicking the menu item
+        //So just verify that the menu is no longer visible
+        await expect(page.locator('#nav')).toBeHidden();
+    });
+
+    //Test09: Select Menu
+    test('Test09: Select Menu', async ({page}) => {
+        //Click Select Menu button on the left menu
+        await page.getByRole('listitem').filter({hasText: 'Select Menu'}).click();
+
+        //Click Select Value dropdown
+        const selectValueDropdown = page.locator('#withOptGroup .css-1hwfws3');
+        await selectValueDropdown.click();
+
+        //Select 'Group 2, option 1' from the dropdown
+        const optionToSelect = page.locator('.css-1n7v3ny-option', { hasText: 'Group 2, option 1' });
+        await optionToSelect.click();
+
+        //Verify selected value
+        const selectedValue = page.locator('#withOptGroup .css-1uccc91-singleValue');
+        await expect(selectedValue).toContainText('Group 2, option 1');
+
+        //Click Select Title dropdown
+        const selectTitleDropdown = page.locator('#selectOne .css-1hwfws3');
+        await selectTitleDropdown.click();
+        
+        //Select 'Mr.' from the dropdown
+        const titleOption = page.locator('.css-1n7v3ny-option', { hasText: 'Mr.' });
+        await titleOption.click();
+
+        //Verify selected title
+        const selectedTitle = page.locator('#selectOne .css-1uccc91-singleValue');
+        await expect (selectedTitle).toContainText('Mr.');
+
+        //Click Old Style Select Menu
+        const oldStyleSelect = page.locator('#oldSelectMenu');
+        await oldStyleSelect.selectOption('Purple');
+
+        //Verify selected color
+        const selectedColor = await oldStyleSelect.inputValue();
+        expect (selectedColor).toBe('Purple');
+
+        //Click Multiselect drop down
+        const multiSelectDropdown = page.locator('#selectMenuContainer .css-1hwfws3');
+        await multiSelectDropdown.click();
+
+        //Select Blue and Red from the dropdown
+        const itemToSelect = page.locator('.css-1n7v3ny-option', { hasText: 'Blue' });
+        await itemToSelect.click();
+        const itemToSelect2 = page.locator('.css-1n7v3ny-option', { hasText: 'Red' });
+        await itemToSelect2.click();
+        
+        //Verify selected colors
+        const selectedColors = page.locator('#selectMenuContainer .css-12jo7m5 .css-1rhbuit-multiValue');
+        const selectedColorsCount = await selectedColors.count();
+        expect (selectedColorsCount).toBe(2);
+
+        //Verify selected colors are Blue and Red
+        for (let i=0; i<selectedColorsCount; i++) {
+            const selectedColor = selectedColors.nth(i);
+            const selectedText = await selectedColor.textContent();
+            expect (selectedText === 'Blue' || selectedText === 'Red').toBeTruthy();
+        }
+
+        //Select 'Volvo' and 'Opel' from the dropdown
+        const multiSelectOptions = page.locator('.css-1n7v3ny-option');
+        const optionCount = await multiSelectOptions.count();
+        for (let i=0; i<optionCount; i++) {
+            const option = multiSelectOptions.nth(i);
+            const optionText = await option.textContent();
+            if (optionText === 'Volvo' || optionText === 'Opel') {
+                await option.click();
+            }
+        }
+
+        //Verify selected cars
+        const selectedCars = page.locator('#selectMenuContainer .css-12jo7m5 .css-1rhbuit-multiValue');
+        const selectedCarsCount = await selectedCars.count();
+        expect (selectedCarsCount).toBe(4);
+    });
 });
