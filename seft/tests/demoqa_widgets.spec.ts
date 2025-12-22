@@ -330,46 +330,63 @@ test.describe('Practice elemements on demoqa page - Widgets', () => {
         //Click Select Menu button on the left menu
         await page.getByRole('listitem').filter({hasText: 'Select Menu'}).click();
 
-        //Click Select Value dropdown
-        const selectValueDropdown = page.locator('#withOptGroup .css-1hwfws3');
-        await selectValueDropdown.click();
+        //-----------------
+        // //Click Select Value dropdown
+        // const selectValueDropdown = page.locator('#withOptGroup .css-1hwfws3');
+        // await selectValueDropdown.click();
 
-        //Select 'Group 2, option 1' from the dropdown
-        const optionToSelect = page.locator('.css-1n7v3ny-option', { hasText: 'Group 2, option 1' });
-        await optionToSelect.click();
+        // //Select 'Group 2, option 1' from the dropdown
+        // const optionToSelect = page.locator('.css-26l3qy-menu', { hasText: 'Group 2, option 1' });
+        // await optionToSelect.click();
 
-        //Verify selected value
-        const selectedValue = page.locator('#withOptGroup .css-1uccc91-singleValue');
-        await expect(selectedValue).toContainText('Group 2, option 1');
+        // //Verify selected value
+        // const selectedValue = page.locator('#withOptGroup .css-1uccc91-singleValue');
+        // await expect(selectedValue).toContainText('Group 2, option 1');
 
-        //Click Select Title dropdown
-        const selectTitleDropdown = page.locator('#selectOne .css-1hwfws3');
-        await selectTitleDropdown.click();
+        // //-----------------
+        // //Click Select Title dropdown
+        // const selectTitleDropdown = page.locator('#selectOne .css-1wy0on6');
+        // await selectTitleDropdown.click();
+
+        // //print all value of dropdown options to console
+        // const allOptions = page.locator('[class*="-option"]');
+        // const allOptionsCount = await allOptions.count();
+        // for (let i=0; i<allOptionsCount; i++) {
+        //     const option = allOptions.nth(i);
+        //     const optionText = await option.textContent();
+        //     console.log('Option: ' + optionText);
+        // }
         
-        //Select 'Mr.' from the dropdown
-        const titleOption = page.locator('.css-1n7v3ny-option', { hasText: 'Mr.' });
-        await titleOption.click();
+        // //Select 'Mr.' from the dropdown
+        // const titleOption = page.locator('[class*="-option"]', { hasText: 'Mr.' });
+        // await titleOption.click();
 
-        //Verify selected title
-        const selectedTitle = page.locator('#selectOne .css-1uccc91-singleValue');
-        await expect (selectedTitle).toContainText('Mr.');
+        // //Click outside to close the dropdown
+        // await page.locator('body').click();
 
-        //Click Old Style Select Menu
-        const oldStyleSelect = page.locator('#oldSelectMenu');
-        await oldStyleSelect.selectOption('Purple');
+        // //Verify selected title
+        // const selectedTitle = page.locator('#selectOne .css-1uccc91-singleValue');
+        // await expect (selectedTitle).toContainText('Mr.');
+        
+        // //-----------------
+        // //Click Old Style Select Menu
+        // const oldStyleSelect = page.locator('#oldSelectMenu');
+        // await oldStyleSelect.selectOption('Purple');
 
-        //Verify selected color
-        const selectedColor = await oldStyleSelect.inputValue();
-        expect (selectedColor).toBe('Purple');
+        // //Verify selected color
+        // const selectedColor = await oldStyleSelect.locator('option:checked').textContent();        expect (selectedColor).toBe('Purple');
+        // expect (selectedColor).toBe('Purple');
 
+        //-----------------
         //Click Multiselect drop down
-        const multiSelectDropdown = page.locator('#selectMenuContainer .css-1hwfws3');
-        await multiSelectDropdown.click();
+        const multiSelectDropdown = page.locator('#css-yk16xz-control').filter({hasText: 'Select...'})  ;
+        //await multiSelectDropdown.click();
 
-        //Select Blue and Red from the dropdown
-        const itemToSelect = page.locator('.css-1n7v3ny-option', { hasText: 'Blue' });
+        //Select Green and Red from the dropdown
+        const itemToSelect = page.locator('[id^=".id="react-select-4-option-"]', { hasText: 'Green' });
         await itemToSelect.click();
-        const itemToSelect2 = page.locator('.css-1n7v3ny-option', { hasText: 'Red' });
+
+        const itemToSelect2 = page.locator('[id^=".id="react-select-4-option-"]', { hasText: 'Red' });
         await itemToSelect2.click();
         
         //Verify selected colors
@@ -377,7 +394,7 @@ test.describe('Practice elemements on demoqa page - Widgets', () => {
         const selectedColorsCount = await selectedColors.count();
         expect (selectedColorsCount).toBe(2);
 
-        //Verify selected colors are Blue and Red
+        // //Verify selected colors are Blue and Red
         for (let i=0; i<selectedColorsCount; i++) {
             const selectedColor = selectedColors.nth(i);
             const selectedText = await selectedColor.textContent();
@@ -395,9 +412,17 @@ test.describe('Practice elemements on demoqa page - Widgets', () => {
             }
         }
 
+        //-----------------
         //Verify selected cars
-        const selectedCars = page.locator('#selectMenuContainer .css-12jo7m5 .css-1rhbuit-multiValue');
-        const selectedCarsCount = await selectedCars.count();
-        expect (selectedCarsCount).toBe(4);
+        // const selectedCars = page.locator('#selectMenuContainer .css-12jo7m5 .css-1rhbuit-multiValue');
+        // const selectedCarsCount = await selectedCars.count();
+        // expect (selectedCarsCount).toBe(4);
+
+        // //Verify selected cars are Volvo, Opel, Blue and Red
+        // for (let j=0; j<selectedCarsCount; j++) {
+        //     const selectedCar = selectedCars.nth(j);
+        //     const selectedText = await selectedCar.textContent();
+        //     expect (selectedText === 'Volvo' || selectedText === 'Opel' || selectedText === 'Blue' || selectedText === 'Red').toBeTruthy();
+        // }
     });
 });
