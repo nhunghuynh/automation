@@ -9,8 +9,10 @@ test.describe('Practice form', () => {
 
     //Test 01: Practice form
     test('Test 01: Practice form', async ({page}) => {
-        //Click Login button to navigate to Login page
+        //Click card to navigate to Practice Form page and wait for it to load
         await page.getByRole('listitem').filter({hasText: 'Practice Form'}).click();
+        await expect(page).toHaveURL(/.*automation-practice-form/);
+        await page.getByRole('heading', {name: 'Student Registration Form'}).waitFor();
 
         //Enter First Name, Last Name, Email
         const firstName = page.getByPlaceholder('First Name');
@@ -55,8 +57,9 @@ test.describe('Practice form', () => {
         await subjectsInput.press('Enter');
 
         //Select Hobbies
-        // const hobbiesSports = page.locator('#hobbies-checkbox-1').last();
-        // await hobbiesSports.check();
+        // Select Sports hobby checkbox using label text
+        const hobbiesSports = page.locator('label', {hasText: 'Sports'});
+        await hobbiesSports.click();
         
         //Upload Picture
         //const uploadPicture = page.locator('#uploadPicture');
@@ -64,23 +67,29 @@ test.describe('Practice form', () => {
 
         //Enter Current Address
         const currentAddress = page.locator('#currentAddress');
+        //await currentAddress.waitFor({state: 'visible', timeout: 10000});
         await currentAddress.fill('123 Test St, Test City, Test Country');
+        // pause 5s after entering address for observation
+       // await page.waitForTimeout(5000);
+        
+        //Select State
+        const stateSelect = page.locator('#state');
+        await stateSelect.click();
+        const stateOption = page.getByText('NCR');
+        await stateOption.click();
 
-        // //Select State
-        // const stateSelect = page.locator('#state');
-        // await stateSelect.click();
-        // const stateOption = page.getByText('NCR');
-        // await stateOption.click();
+        //Select City
+        const citySelect = page.locator('#city');
+        await citySelect.click();
+        const cityOption = page.getByText('Delhi');
+        await cityOption.click();
 
-        // //Select City
-        // const citySelect = page.locator('#city');
-        // await citySelect.click();
-        // const cityOption = page.getByText('Delhi');
-        // await cityOption.click();
-
-        await page.pause();
-        //Submit the form
-        const submitButton = page.getByRole('button', {name: 'Submit'});
-        await submitButton.click({force: true});
+        // await page.pause();
+        // //Submit the form
+        //const submitButton = page.getByRole('button', {name: 'Submit'});
+        //await submitButton.waitFor({state: 'visible', timeout: 10000});
+        // ensure the address was actually entered before submitting
+       // await expect(currentAddress).toHaveValue('123 Test St, Test City, Test Country', { timeout: 5000 });
+       // await submitButton.click();
     });
 });

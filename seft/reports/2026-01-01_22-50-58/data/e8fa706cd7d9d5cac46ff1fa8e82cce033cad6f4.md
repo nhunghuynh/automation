@@ -1,0 +1,197 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - img [ref=e6] [cursor=pointer]
+    - iframe [ref=e9]:
+      
+  - generic [ref=e10]:
+    - banner [ref=e11]:
+      - link [ref=e12] [cursor=pointer]:
+        - /url: https://demoqa.com
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - generic [ref=e19]:
+        - generic [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]:
+            - img [ref=e25]
+            - text: Elements
+          - img [ref=e30]
+        - generic [ref=e34]:
+          - generic [ref=e36] [cursor=pointer]:
+            - generic [ref=e37]:
+              - img [ref=e39]
+              - text: Forms
+            - img [ref=e45]
+          - list [ref=e50]:
+            - listitem [ref=e51] [cursor=pointer]:
+              - img [ref=e52]
+              - generic [ref=e54]: Practice Form
+        - generic [ref=e57] [cursor=pointer]:
+          - generic [ref=e58]:
+            - img [ref=e60]
+            - text: Alerts, Frame & Windows
+          - img [ref=e65]
+        - generic [ref=e71] [cursor=pointer]:
+          - generic [ref=e72]:
+            - img [ref=e74]
+            - text: Widgets
+          - img [ref=e79]
+        - generic [ref=e85] [cursor=pointer]:
+          - generic [ref=e86]:
+            - img [ref=e88]
+            - text: Interactions
+          - img [ref=e93]
+        - generic [ref=e99] [cursor=pointer]:
+          - generic [ref=e100]:
+            - img [ref=e102]
+            - text: Book Store Application
+          - img [ref=e107]
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - heading [level=1] [ref=e113]: Practice Form
+          - heading [level=5] [ref=e114]: Student Registration Form
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - generic [ref=e118]: Name
+              - textbox [ref=e120]:
+                - /placeholder: First Name
+                - text: Nhung
+              - textbox [ref=e123]:
+                - /placeholder: Last Name
+                - text: Huynh
+            - generic [ref=e124]:
+              - generic [ref=e126]: Email
+              - textbox [ref=e128]:
+                - /placeholder: name@example.com
+                - text: testtest@gmail.com
+            - generic [ref=e129]:
+              - generic [ref=e130]: Gender
+              - generic [ref=e131]:
+                - generic [ref=e132]:
+                  - radio [ref=e133]
+                  - generic [ref=e134]: Male
+                - generic [ref=e135]:
+                  - radio [checked] [ref=e136]
+                  - generic [ref=e137]: Female
+                - generic [ref=e138]:
+                  - radio [ref=e139]
+                  - generic [ref=e140]: Other
+            - generic [ref=e141]:
+              - generic [ref=e143]: Mobile(10 Digits)
+              - textbox [ref=e145]:
+                - /placeholder: Mobile Number
+                - text: "0123456789"
+            - generic [ref=e146]:
+              - generic [ref=e148]: Date of Birth
+              - textbox [ref=e152]: 15 May 1990
+            - generic [ref=e153]:
+              - generic [ref=e155]: Subjects
+              - textbox [ref=e162]
+            - generic [ref=e165]:
+              - generic [ref=e167]: Hobbies
+              - generic [ref=e168]:
+                - generic [ref=e169]:
+                  - checkbox [ref=e170]
+                  - generic [ref=e171]: Sports
+                - generic [ref=e172]:
+                  - checkbox [ref=e173]
+                  - generic [ref=e174]: Reading
+                - generic [ref=e175]:
+                  - checkbox [ref=e176]
+                  - generic [ref=e177]: Music
+            - generic [ref=e178]:
+              - generic [ref=e180]: Picture
+              - generic [ref=e182]:
+                - generic [ref=e183]: Select picture
+                - button [ref=e184]
+            - generic [ref=e185]:
+              - generic [ref=e187]: Current Address
+              - textbox [ref=e189]:
+                - /placeholder: Current Address
+            - generic [ref=e190]:
+              - generic [ref=e192]: State and City
+              - generic [ref=e195]:
+                - generic [ref=e196]:
+                  - generic [ref=e197]: Select State
+                  - textbox [ref=e200]
+                - img [ref=e204]
+              - generic [ref=e206]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Select City
+                      - generic:
+                        - generic:
+                          - textbox [disabled]
+                    - generic:
+                      - generic:
+                        - img
+            - button [ref=e209] [cursor=pointer]: Submit
+        - iframe [ref=e213]:
+          
+      - generic [ref=e218]:
+        - img [ref=e220] [cursor=pointer]
+        - iframe [ref=e223]:
+          - iframe [ref=f16e4]:
+            - generic [ref=f17e3]:
+              - generic [ref=f17e4]:
+                - link:
+                  - /url: https://app.adroll.com/optout/privacysandbox
+                  - img [ref=f17e6] [cursor=pointer]
+              - link [ref=f17e8] [cursor=pointer]:
+                - /url: https://apse1-x.d.adroll.com/reporting/click/a3c4d57dc7b12d36eb4e28d9f4d92400/eyJyZWRpcmVjdF91cmwiOiJodHRwczovL3d3dy5pY21hcmtldHMtdm5rLmNvbS9lbi9zdGFydC1mb3JleC10cmFkaW5nLz9jYW1wPTg0MzAzJnV0bV9zb3VyY2U9YWRyb2xsJnV0bV9tZWRpdW09ZGlzcGxheSZ1dG1fY2FtcGFpZ249YWRyX2VuX3ZuX3ByX2xhbCZ1dG1fdGVybT1sYWwmdXRtX2NvbnRlbnQ9Zm9yZXgmcGxhY2VtZW50PSZhZHJjbGlkPSZhZGN0PWEzYzRkNTdkYzdiMTJkMzZlYjRlMjhkOWY0ZDkyNDAwIn0?winning_price=0.01188&network=b
+        - iframe [ref=e226]:
+          - iframe [ref=f8e4]:
+            - generic [ref=f15e3]:
+              - generic [ref=f15e4]:
+                - link:
+                  - /url: https://app.adroll.com/optout/privacysandbox
+                  - img [ref=f15e6] [cursor=pointer]
+              - link [ref=f15e8] [cursor=pointer]:
+                - /url: https://apse1-x.d.adroll.com/reporting/click/7b027c362d8d15d6f2e9fada2bac87d0/eyJyZWRpcmVjdF91cmwiOiJodHRwczovL2ljbWFya2V0cy12bmsuY29tL3ZuL3RyYWRpbmctbWFya2V0cy9pbmRpY2VzLz9jYW1wPTg0NzM1JnV0bV9zb3VyY2U9YWRyb2xsJnV0bV9tZWRpdW09ZGlzcGxheSZ1dG1fY2FtcGFpZ249YWRyX3ZpX3ZuX3ByX2xhbCZ1dG1fdGVybT1sYWwmdXRtX2NvbnRlbnQ9aW5kaWNlcyZwbGFjZW1lbnQ9JmFkcmNsaWQ9JmFkY3Q9N2IwMjdjMzYyZDhkMTVkNmYyZTlmYWRhMmJhYzg3ZDAifQ?winning_price=0.014472&network=b
+    - contentinfo [ref=e227]:
+      - generic [ref=e228]: © 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED.
+  - dialog "Thanks for submitting the form" [active] [ref=e230]:
+    - document:
+      - generic [ref=e231]:
+        - generic [ref=e233]: Thanks for submitting the form
+        - table [ref=e236]:
+          - rowgroup [ref=e237]:
+            - row "Label Values" [ref=e238]:
+              - columnheader "Label" [ref=e239]
+              - columnheader "Values" [ref=e240]
+          - rowgroup [ref=e241]:
+            - row "Student Name Nhung Huynh" [ref=e242]:
+              - cell "Student Name" [ref=e243]
+              - cell "Nhung Huynh" [ref=e244]
+            - row "Student Email testtest@gmail.com" [ref=e245]:
+              - cell "Student Email" [ref=e246]
+              - cell "testtest@gmail.com" [ref=e247]
+            - row "Gender Female" [ref=e248]:
+              - cell "Gender" [ref=e249]
+              - cell "Female" [ref=e250]
+            - row "Mobile 0123456789" [ref=e251]:
+              - cell "Mobile" [ref=e252]
+              - cell "0123456789" [ref=e253]
+            - row "Date of Birth 15 May,1990" [ref=e254]:
+              - cell "Date of Birth" [ref=e255]
+              - cell "15 May,1990" [ref=e256]
+            - row "Subjects" [ref=e257]:
+              - cell "Subjects" [ref=e258]
+              - cell [ref=e259]
+            - row "Hobbies" [ref=e260]:
+              - cell "Hobbies" [ref=e261]
+              - cell [ref=e262]
+            - row "Picture" [ref=e263]:
+              - cell "Picture" [ref=e264]
+              - cell [ref=e265]
+            - row "Address" [ref=e266]:
+              - cell "Address" [ref=e267]
+              - cell [ref=e268]
+            - row "State and City" [ref=e269]:
+              - cell "State and City" [ref=e270]
+              - cell [ref=e271]
+        - button "Close" [ref=e273] [cursor=pointer]
+```

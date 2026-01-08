@@ -17,6 +17,13 @@ export default defineConfig({
   expect: {
     timeout: 5000
   },
+  // slowMo can be controlled with the SLOWMO env var (milliseconds)
+  // e.g. SLOWMO=100 npx playwright test
+  use: {
+    launchOptions: {
+      slowMo: 5,
+    },
+  },
   fullyParallel: true,
 
   reporter: [
