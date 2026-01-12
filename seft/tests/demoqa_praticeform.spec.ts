@@ -52,44 +52,68 @@ test.describe('Practice form', () => {
         await expect(dateOfBirthInput).toHaveValue('15 May 1990');
 
         //Enter Subjects
-        const subjectsInput = page.locator('#subjectsInput');
-        await subjectsInput.fill('Maths');
-        await subjectsInput.press('Enter');
+        // const subjectsInput = page.locator('#subjectsInput');
+        // await subjectsInput.fill('Maths');
+        // await subjectsInput.press('Enter');
 
         //Select Hobbies
         // Select Sports hobby checkbox using label text
-        const hobbiesSports = page.locator('label', {hasText: 'Sports'});
-        await hobbiesSports.click();
+        // const hobbiesSports = page.locator('label', {hasText: 'Sports'});
+        // await hobbiesSports.click();
         
         //Upload Picture
         //const uploadPicture = page.locator('#uploadPicture');
         //await uploadPicture.setInputFiles('seft/tests/resources/testimage.png');
 
         //Enter Current Address
-        const currentAddress = page.locator('#currentAddress');
+       // const currentAddress = page.locator('#currentAddress');
         //await currentAddress.waitFor({state: 'visible', timeout: 10000});
-        await currentAddress.fill('123 Test St, Test City, Test Country');
+       // await currentAddress.fill('123 Test St, Test City, Test Country');
         // pause 5s after entering address for observation
        // await page.waitForTimeout(5000);
         
-        //Select State
-        const stateSelect = page.locator('#state');
-        await stateSelect.click();
-        const stateOption = page.getByText('NCR');
-        await stateOption.click();
+        // //Select State
+        // const stateSelect = page.locator('#state');
+        // await stateSelect.click();
+        // const stateOption = page.getByText('NCR');
+        // await stateOption.click();
 
-        //Select City
-        const citySelect = page.locator('#city');
-        await citySelect.click();
-        const cityOption = page.getByText('Delhi');
-        await cityOption.click();
+        // //Select City
+        // const citySelect = page.locator('#city');
+        // await citySelect.click();
+        // const cityOption = page.getByText('Delhi');
+        // await cityOption.click();
 
         // await page.pause();
-        // //Submit the form
-        //const submitButton = page.getByRole('button', {name: 'Submit'});
-        //await submitButton.waitFor({state: 'visible', timeout: 10000});
-        // ensure the address was actually entered before submitting
-       // await expect(currentAddress).toHaveValue('123 Test St, Test City, Test Country', { timeout: 5000 });
-       // await submitButton.click();
+        //Submit the form
+        const submitButton = page.getByRole('button', {name: 'Submit'});
+        await submitButton.click();
+
+        //Verify submission modal is displayed
+        const submissionModal = page.locator('.modal-content');
+        await expect(submissionModal).toBeVisible();
+
+        //Verify submitted data
+        const submittedName = submissionModal.locator('td').filter({ hasText: 'Student Name' }).locator('..').locator('td').nth(1);
+        await expect(submittedName).toHaveText('Nhung Huynh');
+        
+        const submittedEmail = submissionModal.locator('td').filter({ hasText: 'Student Email' }).locator('..').locator('td').nth(1);
+        await expect(submittedEmail).toHaveText('testtest@gmail.com');
+
+        const submittedGender = submissionModal.locator('td').filter({ hasText: 'Gender' }).locator('..').locator('td').nth(1);
+        await expect(submittedGender).toHaveText('Female');
+
+        const submittedMobile = submissionModal.locator('td').filter({ hasText: 'Mobile' }).locator('..').locator('td').nth(1);
+        await expect(submittedMobile).toHaveText('0123456789');
+
+        const submittedDOB = submissionModal.locator('td').filter({ hasText: 'Date of Birth' }).locator('..').locator('td').nth(1);
+        await expect(submittedDOB).toHaveText('15 May,1990');
+
+        // //Close the modal
+        // const closeModalButton = page.getByRole('button', {name: 'Close'});
+        // await closeModalButton.click();
+        
+        // //Verify modal is closed
+        // await expect(submissionModal).toBeHidden();
     });
 });
