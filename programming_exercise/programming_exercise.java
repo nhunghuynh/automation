@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class LoginValidationLogic{
+public class programming_exercise{
     public static void main(String[] args){
         String username="";
         String password="1234ab";
