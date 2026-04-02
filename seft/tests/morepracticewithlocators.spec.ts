@@ -65,5 +65,6 @@ test.describe('More practice with locators', () => {
 
         //Click Filter button
         await frame.getByRole("button", {name: 'Filter'}).click();
+        
     });
 });

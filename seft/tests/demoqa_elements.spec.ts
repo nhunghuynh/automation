@@ -1,4 +1,4 @@
-import {test, expect} from '@playwright/test';
+ import {test, expect} from '@playwright/test';
 
 //Describe a set of test
 test.describe('Practice elemements on demoqa page', () => {
